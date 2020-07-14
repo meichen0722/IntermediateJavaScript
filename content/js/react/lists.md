@@ -153,3 +153,10 @@ You *can* use the element index **if** your array won't change.
 Using the index can have performance downsides
 
 [and unexpected behavior](https://codesandbox.io/s/practical-fast-mmmw6?file=/src/App.js) with forms
+
+### Exercise
+
+* [Exercise 1](https://codesandbox.io/s/brave-curie-fuqj7?file=/src/App.js)
+* [Exercise 2](https://codesandbox.io/s/charming-dew-u02ji?file=/src/App.js)
+* [Exercise 3](https://codesandbox.io/s/romantic-mclean-96x34?file=/src/App.js)
+
