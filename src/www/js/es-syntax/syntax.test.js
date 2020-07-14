@@ -88,6 +88,7 @@ describe('ES2015 syntax', () => {
     })
 
     it('rewrite to use rest parameters', () => {
+      // takes the first number, and then adds it to each value in the remaining numbers and returns an array
       const addNToNumbers = function () {
         const n = arguments[0]
         const nums = Array.prototype.slice.call(arguments, 1)
@@ -110,6 +111,28 @@ describe('ES2015 syntax', () => {
 
       expect(copy).toEqual([1, 2, 3])
       expect(arr1 === copy).toEqual(false)
+    })
+
+    it('write a function that immutably adds a new item to an array', () => {
+      const concat = (arr, item) => {
+        arr.push(item)
+        return arr
+      }
+      const animals = ['cat', 'dog', 'bird']
+      const moarAnimals = concat(animals, 'alpaca')
+      expect(animals === moarAnimals).toEqual(false)
+      expect(moarAnimals).toEqual(['cat', 'dog', 'bird', 'alpaca'])
+    })
+
+    it('write a function that immutably prepends a new item to an array', () => {
+      const prepend = (arr, item) => {
+        arr.unshift(item)
+        return arr
+      }
+      const animals = ['cat', 'dog', 'bird']
+      const moarAnimals = prepend(animals, 'alpaca')
+      expect(moarAnimals).toEqual(['alpaca', 'cat', 'dog', 'bird'])
+      expect(animals === moarAnimals).toEqual(false)
     })
 
     it('rewrite using spread syntax to duplicate the contents of an array', () => {
@@ -179,6 +202,37 @@ describe('ES2018 syntax', () => {
       const person = { id: 42, name: 'Andrew', location: 'Seattle' }
       const personId = person.id // destructure this, but keep the variable name `personId`
       expect(personId).toEqual(42)
+    })
+
+    it('write a function that immutably records the todo IDs that are done', () => {
+      // todos are expected to be like { 42: true, 63: true }
+      const markDone = (id, todos) => {
+        todos[id] = true
+      }
+      const doneTodos = { 42: true, 63: true }
+      const moreDoneTodos = markDone(3, doneTodos)
+      expect(moreDoneTodos).toEqual({ 42: true, 63: true, 3: true })
+      expect(doneTodos === moreDoneTodos).toEqual(false)
+    })
+  })
+
+  describe('CHALLENGE: combining array and object spreads', () => {
+    it('write a function that immutably updates the done flag on a list of todos', () => {
+      // helper function to locate a todo by its ID in an array. Returns the matched todo
+      const findTodo = (id, todos) => todos.find(todo => todo.id === id)
+
+      const setTodoDone = (id, todos) => {
+        const todo = findTodo(id, todos)
+        todo.done = true // :-(
+        return todos
+      }
+
+      const todos = [{ id: 1, done: false }, { id: 2, done: false }]
+      const updatedTodos = setTodoDone(2, todos)
+      expect(updatedTodos).toEqual([{ id: 1, done: false }, { id: 2, done: true }])
+      expect(updatedTodos === todos).toEqual(false)
+      expect(updatedTodos[0] === todos[0]).toEqual(true) // the 1st one is not changed
+      expect(updatedTodos[1] === todos[1]).toEqual(false) // the 2nd one should be immutably updated as well
     })
   })
 })
