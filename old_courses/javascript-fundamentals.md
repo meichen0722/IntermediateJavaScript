@@ -29,8 +29,6 @@ The source code for this course can be found at the following URL:
   Exception Handling           Networking (AJAX)
   Regular Expressions          Serialization w/ JSON
 
-<<(../content/js/requirements.md)
-
 # JavaScript the Language
 
   <<(../content/js/basic-intro.md)

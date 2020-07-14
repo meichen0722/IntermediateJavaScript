@@ -22,8 +22,6 @@ The source code for this course can be found at the following URL:
 
 <div class="notes">
 
-<<(../content/js/requirements.md)
-
 </div>
 
 Track 1: Modern Programming Techniques

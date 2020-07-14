@@ -41,8 +41,6 @@ This JavaScript course is delivered during two days.
 
 <div class="notes">
 
-<<(../content/js/requirements.md)
-
 </div>
 
 # JavaScript Language
