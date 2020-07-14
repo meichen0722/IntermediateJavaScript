@@ -39,8 +39,8 @@ Day 1
 Day 2
 
 * React lists
-* React patterns
 * Lifecycles
+* React patterns
 * Hooks 
 * Composition vs Inheritance
 
@@ -106,6 +106,7 @@ Day 5
 # React Lists
 
 <<(../content/js/react/lists.md)
+<<(../content/js/react/hoc.md)
 
 # FP Intermediate
 
