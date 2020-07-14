@@ -1,22 +1,31 @@
 ## HTML Refresher
 
-### What is HTML?
+### HTML
 
-  - Hyper Text Markup Language
+* Hyper Text Markup Language
+* Structured language that defines a website
+* Creates a tree data structure
 
-  - HTML is very error tolerant (browsers are very forgiving)
+### HTML5
 
-  - That said, you should strive to write good HTML
+* Cool 6 years ago, now people be like `¯\_(ツ)_/¯`
+* Increased cross-device compatibility
+* New web APIs for feature-rich websites
+  * Web storage (`localStorage`)
+  * Audio / Video
+  * Web workers
 
-  - Structure of the UI and the content of the **view data**
+### The Good Old Days: The Holy Trinity
 
-  - Parsed as a tree of nodes (elements)
+* HTML: content
+* CSS: appearance
+* JS: behavior
 
-  - HTML5
-    - Rich feature set
-    - Semantic (focus on content and not style)
-    - Cross-device compatibility
-    - Easier!
+### Modern Web Dev
+
+* JS: the mastermind of all things
+  * Creates/manipulates HTML
+  * Can generate CSS
 
 ### Anatomy of an HTML Element
 

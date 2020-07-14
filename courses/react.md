@@ -29,9 +29,9 @@ The source code for this course can be found at the following URL:
 Day 1
 
 * JavaScript Recap
+* Functional Programming (Basics)
 * JS Tooling
 * Web Development basics
-* Functional Programming
 * React Basics
 
 ### What's In Store {.unnumbered}
@@ -92,6 +92,21 @@ Day 5
 <<(../content/js/functional/closures.md)
 <<(../content/js/functional/this.md)
 
+# Developer Tools
+
+<<(../content/js/tools/packages/index.md)
+<<(../content/js/tools/lint/index.md)
+<<(../content/js/tools/babel/index.md)
+<<(../content/js/tools/webpack/index.md)
+
+# Web Development
+
+<<(../content/html/review)
+
+# React Lists
+
+<<(../content/js/react/lists.md)
+
 # FP Intermediate
 
 ## Functional Programming Intermediate
@@ -103,10 +118,6 @@ Day 5
 ## Object-Oriented Programming
 
 <<(../content/js/oop/classes.md)
-<<(../content/js/oop/prototype.md)
-<<(../content/js/oop/constructors.md)
-<<(../content/js/oop/reflection.md)
-<<(../content/js/oop/mutable.md)
 
 # Asynchronous Programming
 
@@ -115,22 +126,6 @@ Day 5
 <<(../content/js/apis/fetch/index.md)
 <<(../content/js/apis/fetch/lab.md)
 <<(../content/js/async/await/index.md)
-
-# Web Application Development
-
-<<(../content/js/apis/websockets/index.md)
-<<(../content/js/apis/webstorage/index.md)
-<<(../content/js/apis/serviceworkers/index.md)
-<<(../content/js/apis/webworkers/index.md)
-
-# Developer Tools
-
-<<(../content/js/tools/packages/index.md)
-<<(../content/js/tools/lint/index.md)
-<<(../content/js/tools/babel/index.md)
-<<(../content/js/tools/webpack/index.md)
-<<(../content/js/alternatives/typescript/basics.md)
-<<(../content/js/alternatives/typescript/more.md)
 
 # Testing
 

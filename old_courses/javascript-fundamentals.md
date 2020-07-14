@@ -50,9 +50,7 @@ The source code for this course can be found at the following URL:
 
 # Object-Oriented Programming
 
-  <<(../content/js/oop/context.md)
   <<(../content/js/oop/new.md)
-  <<(../content/js/oop/factory.md)
 
 # Exceptions
 

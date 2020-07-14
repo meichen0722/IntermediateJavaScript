@@ -1,5 +1,4 @@
-Defining and Invoking Functions
--------------------------------
+## What's Your Function
 
 ### Defining a Function
 
