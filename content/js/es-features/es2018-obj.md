@@ -40,16 +40,29 @@ Copying an object into another object:
 ~~~ {.javascript insert="../../../src/examples/es-features/es2018.js" token="spread"}
 ~~~
 
+### Object Copying
+
+Use spread to immutably copy an object:
+
+```javascript
+const obj1 = { foo: 'bar' }
+const obj2 = { ...obj1 }
+
+obj1 // { foo: 'bar' }
+obj2 // { foo: 'bar' }
+obj1 === obj2 // false
+```
+
 ### Object Spreading
 
-Performs a shallow copy:
+Spreading performs a shallow copy, so objects and arrays are copied by reference:
 
 ~~~ {.javascript insert="../../../src/examples/es-features/es2018.js" token="spread-shallow"}
 ~~~
 
 ### Object Spreading
 
-Performs a shallow copy:
+Spreading performs a shallow copy, so objects and arrays are copied by reference:
 
 ~~~ {.javascript insert="../../../src/examples/es-features/es2018.js" token="spread-shallow-answer"}
 ~~~
