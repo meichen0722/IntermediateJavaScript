@@ -103,6 +103,10 @@ Day 5
 
 <<(../content/html/refresher.md)
 
+# React Basics
+
+<<(../content/js/react/basics.md)
+
 # React Lists
 
 <<(../content/js/react/lists.md)
