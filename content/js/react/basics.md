@@ -187,6 +187,7 @@ const greeting = (
   * Pull your name into an object called `user` with a `name` property
   * Pull today's date into a JS variable `date` [(hint link)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
     * Display the date in the format `mm/dd/YYYY`
+  * Open up the React DevTools and check out your app
   * CHALLENGE: Search npm for a date management package
     * Add as a dependency and use it to display the date.
     * Add dependencies with `yarn add [package]`
