@@ -132,7 +132,9 @@ Other exercises will have you work with a Jest spec file and maybe an implementa
 
 ### Sandbox
 
-There's a JS sandbox under `/sandbox`, with a skeleton React starter project. Go into that directory and follow the `README.md` to get it running. 
+There's a JS sandbox under `/sandbox`, with a skeleton JS starter project. Go into that directory and follow the `README.md` to get it running.
+
+For React, use `/sandbox_react` which has some additional libraries and setup.
 
 ## Development (students can ignore) 
 
