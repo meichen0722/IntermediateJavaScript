@@ -88,6 +88,13 @@ $ npm --version
 $ curl -o- -L https://yarnpkg.com/install.sh | bash
 ```
 
+### React DevTools
+
+We'll install an extension that makes it easier to debug React apps.
+
+* [Chrome](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
+* [Firefox](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/)
+
 ### Text Editor
 
 You can use your favorite text editor to follow along.
