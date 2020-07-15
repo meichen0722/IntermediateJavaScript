@@ -2,9 +2,7 @@
 
 ### Higher Order Components (HOCs)
 
-The original pattern to encapsulate
-
-business logic in React.
+The original pattern to encapsulate business logic in React.
 
 ### A simple example
 
@@ -24,7 +22,7 @@ class ToggleableSomething extends React.Component {
 }
 ```
 
-[Example](https://codesandbox.io/s/heuristic-noether-m8qvo?file=/src/App.js)
+Example [(link)](https://codesandbox.io/s/heuristic-noether-m8qvo?file=/src/App.js)
 
 ### What the HOC is a HOC?
 
@@ -49,7 +47,11 @@ When we call it with a component, we magically get one
 class Button extends React.Component {
   render() {
     const { toggle, toggled } = this.props
-    return <button onClick={toggle}>{toggled ? 'ON' : 'OFF'}</button>
+    return (
+      <button onClick={toggle}>
+        {toggled ? 'ON' : 'OFF'}
+      </button>
+    )
   }
 }
 
@@ -72,9 +74,7 @@ const withToggle = WrappedComponent => {
 
 ### Writing a HOC
 
-Next, you'll want to go ahead and render
-
-the `WrappedComponent`
+Next, you'll want to go ahead and render the `WrappedComponent`
 
 ```javascript
 const withToggle = WrappedComponent => {
@@ -133,7 +133,25 @@ const withToggle = WrappedComponent => {
 
 ### Writing a HOC
 
-[Example](https://codesandbox.io/s/vibrant-goldstine-k6qrd?file=/src/App.js)
+It's also considered good practice to pass along any other props given to the HOC.
+
+```javascript
+/* ... */
+
+render() {
+  return (
+    <WrappedComponent
+      toggled={this.state.toggled}
+      handleToggle={this.handleToggle}
+      {...this.props}
+    />
+  )
+}
+```
+
+### Writing a HOC
+
+Example [(link)](https://codesandbox.io/s/vibrant-goldstine-k6qrd?file=/src/App.js)
 
 ### Naming is hard...
 
@@ -144,7 +162,9 @@ class SomethingThatExpectsBehavior extends React.Component {
   /* ... */
 }
 
-const SomethingThatHasBehavior = withBehavior(SomethingThatExpectsBehavior)
+const SomethingThatHasBehavior = withBehavior(
+  SomethingThatExpectsBehavior
+)
 ```
 
 ### Naming is hard...
@@ -161,5 +181,5 @@ const SomethingThatHasBehavior = withBehavior(
 
 ### Exercise
 
-* [Exercise 1](https://codesandbox.io/s/romantic-grothendieck-d3ope?file=/src/App.js)
-* [Exercise 2](https://codesandbox.io/s/brave-lichterman-dy7v0?file=/src/App.js)
+* Exercise 1 [(link)](https://codesandbox.io/s/romantic-grothendieck-d3ope?file=/src/App.js)
+* Exercise 2 [(link)](https://codesandbox.io/s/brave-lichterman-dy7v0?file=/src/App.js)

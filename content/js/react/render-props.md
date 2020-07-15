@@ -4,10 +4,18 @@
 
 A pattern that mostly supplanted the HOC
 
+### Why Render Props?
+
 HOC downsides:
 
-* Where did the data come from?
+* Where did the data come from? `withFoo`? `withBar`?
 * Even more confusing with multiple HOC wrappers
+    * You get little gems like these:
+
+```javascript
+withFoo(withBar(withBaz(MyComponent)))
+```
+
 * Easy name collisions
 
 ### Another Holy War
@@ -102,11 +110,11 @@ Which can be rewritten as:
 
 ### Downsides
 
-* [Callback hell](https://twitter.com/acdlite/status/955955121979969537/photo/1)
-* Can be more awkward to debug values
+* Callback hell [(link)](https://twitter.com/acdlite/status/955955121979969537/photo/1)
+* Can be more awkward to debug values inside wrapped component
 * Wrapped component can't have lifecycle methods
 
 ### Exercises
 
-* [Exercise 1](https://codesandbox.io/s/optimistic-matsumoto-l2grh?file=/src/App.js)
-* [Exercise 2](https://codesandbox.io/s/distracted-wind-57zfu?file=/src/App.js)
+* Exercise 1 [(link)](https://codesandbox.io/s/optimistic-matsumoto-l2grh?file=/src/App.js)
+* Exercise 2 [(link)](https://codesandbox.io/s/distracted-wind-57zfu?file=/src/App.js)

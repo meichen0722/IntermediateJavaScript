@@ -16,7 +16,7 @@ const Todos = () => (
 
 ### Dynamic Lists
 
-But what happens when your list is dynamic?
+But what do you do when your list is dynamic?
 
 e.g. your `Todos` component takes a `todos` array as a prop?
 
@@ -30,7 +30,7 @@ const Todos = ({ todos }) => (
 
 ### Dynamic Lists
 
-Remember: JSX are simply JS *values*.
+Remember: JSX are simply JS *values*. This is valid:
 
 ```javascript
 const Todos = ({ todos }) => {
@@ -46,6 +46,12 @@ const Todos = ({ todos }) => {
 ```
 
 ### Dynamic Lists
+
+So, all we need to do is transform an array of data values
+
+into one with JSX tags.
+
+...
 
 What do we use to transform an array of elements
 
@@ -93,6 +99,28 @@ When you do this in the browser, you'll get:
 
 ### The Key to the Kingdom
 
+* `key` prop used by React to identify nodes between renders
+* It allows React to reuse DOM nodes
+
+```javascript
+<ul>
+  <li key="a">A</li>
+  <li key="b">B</li>
+</ul>
+```
+
+### A Quick Note
+
+These examples have the elements written out.
+
+**When you write out JSX elements individually**, you don't
+
+need to provide a key. Only during iteration.
+
+(They're written out to visualize more easily.)
+
+### The Key to the Kingdom
+
 * `key` is used by React to identify nodes between renders
 * It allows React to reuse DOM nodes
 
@@ -101,8 +129,8 @@ When you do this in the browser, you'll get:
 
 ```javascript
 <ul>
-  <li key="apples">Apples</li>
-  <li key="bananas">Bananas</li>
+  <li key="a">A</li>
+  <li key="b">B</li>
 </ul>
 ```
 
@@ -110,15 +138,15 @@ When you do this in the browser, you'll get:
 
 ```javascript
 <ul>
-  <li key="clems">Clementines</li>
-  <li key="apples">Apples</li>
-  <li key="bananas">Bananas</li>
+  <li key="c">C</li>
+  <li key="a">A</li>
+  <li key="b">B</li>
 </ul>
 ```
 
 \columnsend
 
-The `apples` and `bananas` elements will be reused
+The `a` and `b` elements will be reused
 
 ### The Key to the Kingdom
 
@@ -127,12 +155,12 @@ The `apples` and `bananas` elements will be reused
 
 ```javascript
 <ul>
-  <li key="apples">Apples</li>
-  <li key="bananas">Bananas</li>
+  <li key="a">A</li>
+  <li key="b">B</li>
 </ul>
 <ul>
-  <li key="apples">Apples</li>
-  <li key="berries">Raspberries</li>
+  <li key="a">A</li> {/* same key, no problem! */}
+  <li key="b">Other B</li>
 </ul>
 ```
 
@@ -152,11 +180,11 @@ You *can* use the element index **if** your array won't change.
 
 Using the index can have performance downsides
 
-[and unexpected behavior](https://codesandbox.io/s/practical-fast-mmmw6?file=/src/App.js) with forms
+and unexpected behavior [(link)](https://codesandbox.io/s/practical-fast-mmmw6?file=/src/App.js) with forms
 
 ### Exercise
 
-* [Exercise 1](https://codesandbox.io/s/brave-curie-fuqj7?file=/src/App.js)
-* [Exercise 2](https://codesandbox.io/s/charming-dew-u02ji?file=/src/App.js)
-* [Exercise 3](https://codesandbox.io/s/romantic-mclean-96x34?file=/src/App.js)
+* Exercise 1: [(link)](https://codesandbox.io/s/brave-curie-fuqj7?file=/src/App.js)
+* Exercise 2: [(link)](https://codesandbox.io/s/charming-dew-u02ji?file=/src/App.js)
+* Exercise 3: [(link)](https://codesandbox.io/s/romantic-mclean-96x34?file=/src/App.js)
 

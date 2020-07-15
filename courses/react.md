@@ -107,6 +107,7 @@ Day 5
 
 <<(../content/js/react/lists.md)
 <<(../content/js/react/hoc.md)
+<<(../content/js/react/render-props.md)
 
 # FP Intermediate
 
