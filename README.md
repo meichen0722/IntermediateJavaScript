@@ -3,6 +3,27 @@
 This is the source code and training content for the Web
 Development course taught by [Andrew Smith](https://github.com/andrewsouthpaw/).
 
+## Before you begin
+
+Start by forking and cloning the repo. Once you've cloned the repo, set this repo as the `upstream`
+
+```
+$ git remote add upstream https://github.com/AndrewSouthpaw/webdev.git
+```
+
+When I update the repo and you want to pull the recent changes in upstream:
+
+```
+$ git checkout master
+$ git pull upstream master
+```
+
+You're encouraged to work on a branch during the course, so you can easily re-play your changes on top of any updates I make by running a little helper script:
+
+```
+$ bin/branchupdate
+``` 
+
 ## Setup
 
 We're going to walk through installation of the following:
@@ -67,9 +88,37 @@ $ npm --version
 $ curl -o- -L https://yarnpkg.com/install.sh | bash
 ```
 
-## Running
+### Text Editor
 
-Install our webdev dependencies:
+You can use your favorite text editor to follow along.
+
+I'm am fan of the [WebStorm](https://www.jetbrains.com/webstorm/) IDE by JetBrains. Free trial, not too expensive, definitely worth the money in my book.
+
+[VS Code](https://code.visualstudio.com/) is the most popular open-source editor. Highly extensible, lots of important people swear by it. 
+
+**What should I choose??** 😧
+
+Try both, see what you like more. I live by the features offered by an IDE, but maybe you won't, or will hate their UX. Every person is different. For this course, I will be demoing code in an IDE.
+
+### Local JS Environment
+
+You can always open a console in Firefox or Chrome and get to a JS REPL.
+
+Buuuut there's a cool app now called [RunJS](https://runjs.dev/) that allows you to write and evaluate JS in a much more satisfying way. I'll be using this as a scratchpad for demonstrations from time to time. (Firefox also has a scratchpad feature, I just never got into it.)  
+
+## Folder Structure
+
+### Slides
+
+Follow along using the links in `/slides` to view the latest version of the slides for this course.
+
+(GitHub isn't the best at version-controlling binary files, so I keep the slides in Google Drive to keep the repo smaller.)
+
+### Exercises
+
+Most of the action lives inside `/src`, that's where you'll be doing most of your exercises.
+
+Start by installing our dependencies:
 
 ```shell
 $ cd src
@@ -77,9 +126,17 @@ $ yarn
 $ yarn start
 ```
 
-Then visit <http://localhost:3000>
+Then visit <http://localhost:3000>. This will lead you to various interactive pages and test suites that will be used throughout the course.
 
-## Building the Course Content (PDF Files)
+Other exercises will have you work with a Jest spec file and maybe an implementation file. In those cases, open one (or both) files for instructions. You can run the tests by running the commands in the prompt from the `/src` folder.
+
+### Sandbox
+
+There's a JS sandbox under `/sandbox`, with a skeleton React starter project. Go into that directory and follow the `README.md` to get it running. 
+
+## Development (students can ignore) 
+
+### Building the Course Content (PDF Files)
 
 1. Start with Linux, as macOS has incompatibility issues
 

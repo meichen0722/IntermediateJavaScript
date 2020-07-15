@@ -1,6 +1,8 @@
 const path = require('path')
 const webpack = require('webpack')
 
+PORT = 8000
+
 module.exports = {
   entry: './src/index.js',
   mode: 'development',
@@ -29,8 +31,8 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, "public/"),
-    port: 3000,
-    publicPath: "http://localhost:3000/dist/",
+    port: PORT,
+    publicPath: `http://localhost:${PORT}/dist/`,
     clientLogLevel: 'error'
   },
 }

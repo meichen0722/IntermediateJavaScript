@@ -19,6 +19,7 @@
 - [ ] try moving stuff to codesandbox.io?
 - [ ] demonstrate using `super` in a method
 - [ ] show class mixins
+- [ ] add survey links for modules
 
 Idea for FP intro:
 
