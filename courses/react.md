@@ -106,6 +106,9 @@ Day 5
 # React Basics
 
 <<(../content/js/react/basics.md)
+<<(../content/js/react/components.md)
+<<(../content/js/react/props.md)
+
 
 # React Lists
 

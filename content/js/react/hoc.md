@@ -181,5 +181,5 @@ const SomethingThatHasBehavior = withBehavior(
 
 ### Exercise
 
-* Exercise 1 [(link)](https://codesandbox.io/s/romantic-grothendieck-d3ope?file=/src/App.js)
+* Exercise 1 [(link)](https://codesandbox.io/s/fervent-leavitt-jeyvz?file=/src/App.js)
 * Exercise 2 [(link)](https://codesandbox.io/s/brave-lichterman-dy7v0?file=/src/App.js)
