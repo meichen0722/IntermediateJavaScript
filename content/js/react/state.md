@@ -1,12 +1,15 @@
-## State (Class Comp.)
+## State (in Class Components)
 
 ### State
 
 * The second core part of a component is **state**
 * State allows a UI to have dynamic behavior
+* State can change in the response to events
+  * Examples?
 * State can track many things
   * Examples?
 * Originally, state was only available for **class components**.
+  * They're still very common, so we'll start there.
 
 ### State
 
@@ -37,7 +40,7 @@ class Counter extends React.Component {
 }
 ```
 
-### State
+### Setting State
 
 * State can be set via `this.setState`
 * You provide the state keys you want to update
@@ -54,7 +57,11 @@ class SpinalTapAmp extends React.Component {
 }
 ```
 
-### State
+### It Goes Up To Eleven
+
+[![](./images/up-to-eleven.jpg)](https://www.youtube.com/watch?v=KOO5S4vxi0o)
+
+### Triggering State Changes
 
 A classic way to change state is with `<button>` clicks.
 
@@ -68,7 +75,7 @@ render() {
 
 We are giving `this.upToEleven` as a click handler for the `button` element.
 
-### State
+### Triggering State Changes
 
 What's the difference between these two buttons?
 
@@ -78,11 +85,10 @@ What's the difference between these two buttons?
 <button onClick={this.upToEleven()}>TURN IT UP</button>
 ```
 
-### State
+### Triggering State Changes
 
-The second one won't work.
-
-We are *invoking* `this.upToEleven` and taking its **return value** and assigning it as a click handler to the `button`.
+* The second one won't work.
+* We are *invoking* `this.upToEleven` and taking its **return value** and assigning it as a click handler to the `button`.
 
 ### Showing State
 
@@ -90,6 +96,27 @@ We are *invoking* `this.upToEleven` and taking its **return value** and assignin
 * It triggers a re-render of the component
 * A component **render**s every time **props** or **state** changes
   * Otherwise, it just contentedly does nothing forever
+
+### Showing State
+
+* Every time the state changes, the `render` method runs
+
+```javascript
+class Counter extends React.Component {
+  state = { count: 0 }
+  
+  increment = () => {
+    this.setState({ count: this.state.count + 1 })
+  }
+  
+  render() {
+    console.log(this.state) // what gets printed?
+    return (
+      <button onClick={this.increment}>Foo</button>
+    )
+  }
+}
+```
 
 ### Showing State
 
@@ -119,8 +146,8 @@ Sometimes you want to conditionally show something:
 
 ```javascript
 <div>
-  {myConditional && (
-    <p>Renders if myConditional is true</p>
+  {condA && (
+    <p>Renders if condA is true</p>
   )}
 </div>
 ```
@@ -133,10 +160,10 @@ You can also have conditional if/else logic:
 
 ```javascript
 <div>
-  {myConditional ? (
-    <p>Renders if myConditional is true</p>
+  {condA ? (
+    <p>Renders if condA is true</p>
   ) : (
-    <p>Renders if myConditional is false</p>
+    <p>Renders if condA is false</p>
   )}
 </div>
 ```
@@ -147,14 +174,14 @@ It's fairly common to make nested ternaries.
 
 ```javascript
 <div>
-  {cond1 ? (
-    cond2 ? (
-      <p>cond1 true | cond2 true</p>
+  {condA ? (
+    condB ? (
+      <p>condA true | condB true</p>
     ) : (
-      <p>cond1 true | cond2 false</p>
+      <p>condA true | condB false</p>
     )
   ) : (
-    <p>cond1 false</p>
+    <p>condA false</p>
   )}
 </div>
 ```
@@ -164,8 +191,6 @@ It's fairly common to make nested ternaries.
 Example [(link)](https://codesandbox.io/s/sad-bogdan-fvkd2?file=/src/App.js)
 
 ### What's with the Funky Syntax
-
-![](./images/up-to-eleven.jpg)
 
 * `state` and `upToEleven` are called **public instance fields** [(link)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields)
 * It allows initializing fields w/o using `constructor`
