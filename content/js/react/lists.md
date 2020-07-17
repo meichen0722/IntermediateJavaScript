@@ -187,4 +187,3 @@ and unexpected behavior [(link)](https://codesandbox.io/s/practical-fast-mmmw6?f
 * Exercise 1: [(link)](https://codesandbox.io/s/brave-curie-fuqj7?file=/src/App.js)
 * Exercise 2: [(link)](https://codesandbox.io/s/charming-dew-u02ji?file=/src/App.js)
 * Exercise 3: [(link)](https://codesandbox.io/s/romantic-mclean-96x34?file=/src/App.js)
-
