@@ -110,6 +110,7 @@ Day 5
 <<(../content/js/react/props.md)
 <<(../content/js/react/state.md)
 <<(../content/js/react/forms-controlled.md)
+<<(../content/js/react/state-hooks.md)
 
 # React Lists
 
