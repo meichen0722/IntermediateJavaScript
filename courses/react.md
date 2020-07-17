@@ -30,36 +30,32 @@ Day 1
 
 * JavaScript Recap
 * Functional Programming (Basics)
-* JS Tooling
-* Web Development basics
 * React Basics
 
 ### What's In Store {.unnumbered}
 
 Day 2
 
-* React lists
-* Lifecycles
-* React patterns
-* Hooks 
+* Interactive React
+* React Design Patterns
 * Composition vs Inheritance
 
 ### What's In Store {.unnumbered}
 
 Day 3
 
-* Events
 * Forms - uncontrolled components
-* Forms - controlled components
 * React Hook Form
 * React Bootstrap
 * Refs
+* Lifecycles
 * Async React
 
 ### What's In Store {.unnumbered}
 
 Day 4
 
+* JS Tooling
 * JS Testing
 * React Testing
 * E2E Testing
@@ -108,14 +104,17 @@ Day 5
 <<(../content/js/react/basics.md)
 <<(../content/js/react/components.md)
 <<(../content/js/react/props.md)
+
+# Interactive React
+
 <<(../content/js/react/state.md)
+<<(../content/js/react/lists.md)
 <<(../content/js/react/forms-controlled.md)
 <<(../content/js/react/state-hooks.md)
 <<(../content/js/react/crud.md)
 
-# React Lists
+# React Design Patterns
 
-<<(../content/js/react/lists.md)
 <<(../content/js/react/hoc.md)
 <<(../content/js/react/render-props.md)
 
