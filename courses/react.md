@@ -6,7 +6,7 @@ logo: /home/andrew/Projects/webdev/data/images/logo.png
 author:
   - name: "Andrew Smith"
     email: "andrewsouthpaw@gmail.com"
-    url: "https://andrewsouthpaw.com"
+    url: "www.andrewsouthpaw.com"
     twitter: "andrewsouthpaw"
 
 copyright: >
@@ -112,6 +112,7 @@ Day 5
 <<(../content/js/react/forms-controlled.md)
 <<(../content/js/react/state-hooks.md)
 <<(../content/js/react/crud.md)
+<<(../content/js/react/lifecycle.md)
 
 # React Design Patterns
 
@@ -123,6 +124,7 @@ Day 5
 TODO compound components
 
 # Async React
+
 
 # FP Intermediate
 

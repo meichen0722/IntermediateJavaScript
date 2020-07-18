@@ -41,6 +41,23 @@
 </Modal>
 ```
 
+### They're Like Containers
+
+```javascript
+<Block>
+  <span>Hello world</span>
+</Block>
+<Block>
+  <span>These are spaced out</span>
+</Block>
+
+<SpreadEvenly>
+  <span>A</span>
+  <span>B</span>
+  <span>C</span>
+</SpreadEvenly>
+```
+
 ### Composition in React
 
 Components simply use other components:

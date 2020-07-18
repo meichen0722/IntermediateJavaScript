@@ -39,19 +39,21 @@ Q:  How does `App` know about the "on" state of `Switch`?
 ### Making a Toggle Component
 
 ```javascript
-const Switch = () => {
+const Switch = ({ on, onChange }) => (
+  <input type="checkbox" value={on} onChange={onChange} />
+)
+
+export const App = () => {
   const [on, setOn] = useState(false)
   return (
-    <input type="checkbox" value={on} onChange={() => { setOn(!on) }} />
+    <div className="App">
+      <Switch on={on} onChange={() => { setOn(!on) }} />
+    </div>
   )
 }
-
-export const App = () => (
-  <div className="App">
-    <Switch />
-  </div>
-)
 ```
+
+Visualization: [(link)](http://localhost:3000/js/react/one-way-data/index.html)
 
 ### Making a Toggle Component
 
