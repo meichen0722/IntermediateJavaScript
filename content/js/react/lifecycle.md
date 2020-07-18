@@ -30,7 +30,7 @@
 
 * Runs *after* the component is mounted to the DOM
 * This matters so DOM layout calculations are correct
-* Great place for side effects (e.g. network calls, timers, etc.)
+* Great place for side effects (e.g. timers, etc.)
 
 ```javascript
 export class Countdown extends React.Component {

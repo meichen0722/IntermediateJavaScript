@@ -109,10 +109,17 @@ Day 5
 
 <<(../content/js/react/state.md)
 <<(../content/js/react/lists.md)
-<<(../content/js/react/forms-controlled.md)
 <<(../content/js/react/state-hooks.md)
+
+# Forms
+
+<<(../content/js/react/forms-controlled.md)
 <<(../content/js/react/crud.md)
+
+# React Lifecycle
+
 <<(../content/js/react/lifecycle.md)
+<<(../content/js/react/lifecycle-hooks.md)
 
 # React Design Patterns
 

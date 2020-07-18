@@ -83,10 +83,10 @@ const Clicker = () => {
 * Get rid of `this.` in front of `props`, `state`, and methods
 * We'll learn later how to deal with lifecycle methods (e.g. `componentDidMount`)
 
-[(Demo)](https://codesandbox.io/s/practical-dawn-7kl0v)
+Demo [(link)](https://codesandbox.io/s/practical-dawn-7kl0v)
 
 ### Exercise
 
 **Exercise 1**: [(link)](https://codesandbox.io/s/strange-bogdan-j9vb4?file=/src/App.js)
 
-**Exercise 2**: [(link)](https://codesandbox.io/s/compassionate-fermat-bwmus?file=/src/App.js)
+**Exercise 2**: [(link)](https://codesandbox.io/s/kind-austin-pfgwn?file=/src/App.js)
