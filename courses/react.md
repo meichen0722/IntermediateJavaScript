@@ -115,8 +115,14 @@ Day 5
 
 # React Design Patterns
 
+<<(../content/js/react/composition.md)
+<<(../content/js/react/lifting-state.md)
 <<(../content/js/react/hoc.md)
 <<(../content/js/react/render-props.md)
+
+TODO compound components
+
+# Async React
 
 # FP Intermediate
 
