@@ -136,6 +136,26 @@ const CustomTextFn = () => {
 }
 ```
 
+### Ref Hooks
+
+* Ref hooks are only computed the first time
+* Great way to simulate instance variables that shouldn't recompute
+* They give you a box to store mutable variables
+
+```javascript
+export const App = () => {
+  const [clicks, setClick] = useState(0)
+  const ref = useRef(clicks) 
+  console.log('ref.current', ref.current) // always 0
+  return (
+    <div>
+      <h1>Hello</h1>
+      <button onClick={() => setClick(clicks + 1)}>Click</button>
+    </div>
+  )
+}
+```
+
 ### Imperative React
 
 * Now you might be thinking:
