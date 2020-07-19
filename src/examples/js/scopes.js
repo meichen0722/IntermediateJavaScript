@@ -195,3 +195,28 @@ function second() {
 
 second() // 'Hello'
 // :>>
+
+// <<: top-down-const
+const first = () => {
+  second()
+}
+
+const second = () => {
+  console.log('Hello')
+}
+
+second() // ?
+// :>>
+
+// <<: top-down-const-answer
+const first = () => {
+  return second()
+}
+
+const second = () => {
+  return 'Hello'
+}
+
+second() // 'Hello'
+// :>>
+

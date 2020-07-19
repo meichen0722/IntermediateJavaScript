@@ -5,6 +5,7 @@ const makeCounter = (startingValue) => {
   return () => n += 1
 }
 // :>>
+window.makeCounter = makeCounter
 
 // <<: simple
 const init = () => {
@@ -13,8 +14,8 @@ const init = () => {
     console.log(name)
   }
 }
-
 // :>>
+window.init = init
 
 const specialization = () => {
   // <<: specialization

@@ -133,3 +133,17 @@ Does this work?
 
 ~~~ {.javascript insert="../../src/examples/js/scopes.js" token="top-down-answer"}
 ~~~
+
+### Top-Down Code
+
+How about this?
+
+~~~ {.javascript insert="../../src/examples/js/scopes.js" token="top-down-const"}
+~~~
+
+### Top-Down Code
+
+How about this?
+
+~~~ {.javascript insert="../../src/examples/js/scopes.js" token="top-down-const-answer"}
+~~~

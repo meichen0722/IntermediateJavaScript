@@ -222,7 +222,7 @@ e.g. `map(double)`
 
 \column{.5\textwidth}
 
-`reduce`: 1 : ??? transformation
+`reduce`: M : 1 transformation
 
 ~~~ {.javascript}
 e.g. `reduce(add)`

@@ -1,13 +1,13 @@
-// general
-const prop = () => {}
-const groupBy = () => {}
-
-// specialized
-const getId = prop('id')
-const getName = prop('name')
-const getColor = prop('favoriteColor')
-
 describe('Closures: Specializing Behavior', () => {
+  // general
+  const prop = () => { throw new Error('Implement me') }
+  const groupBy = () => { throw new Error('Implement me') }
+
+  // specialized
+  const getId = prop('id')
+  const getName = prop('name')
+  const getColor = prop('favoriteColor')
+
   const users = [
     { id: 1, name: 'Andrew', admin: true, favoriteColor: 'blue' },
     { id: 2, name: 'Billy', admin: false, favoriteColor: 'red' },
@@ -16,12 +16,12 @@ describe('Closures: Specializing Behavior', () => {
   ]
   const [andrew, billy, cynthia, dorothy] = users
 
-  it('implement #prop', () => {
+  it('implement #prop (at top of file)', () => {
     expect(getId(andrew)).toEqual(1)
     expect(getName(andrew)).toEqual('Andrew')
   })
 
-  it('implement #groupBy', () => {
+  it('implement #groupBy (at top of file)', () => {
     const groupedByColor = groupBy(getColor)
     expect(groupedByColor).toEqual({
       blue: [andrew],

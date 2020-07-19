@@ -212,7 +212,28 @@ Handy for frameworks like React:
 
 ```javascript
 class Person extends React.Component {
-  getName() { alert(this.props.name) }
+  getName() { 
+    console.log(this.props.name) // error 
+  }
+  render() {
+    return (
+      <button onClick={this.getName}>
+        Say Name
+      </button>
+    )
+  }
+}
+```
+
+### Object Methods
+
+Handy for frameworks like React:
+
+```javascript
+class Person extends React.Component {
+  getName = () => { 
+    console.log(this.props.name) // 'Andrew' 
+  }
   render() {
     return (
       <button onClick={this.getName}>
@@ -225,9 +246,13 @@ class Person extends React.Component {
 
 ### Exercise
 
-  #. Open <https://codesandbox.io/s/this-9xunj>
+  #. Open `src/www/js/this/this.test.js`
   
-  #. Complete the exercises
+  #. Follow directions in the `it` statements
   
-  #. Watch the *Console* for printouts of whether each exercise is passing
-  
+  #. All tests should keep passing 
+
+```shell
+$ cd src
+$ yarn jest this.test.js --watch
+```

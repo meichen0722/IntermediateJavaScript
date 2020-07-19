@@ -24,15 +24,10 @@ $ yarn eslint yourfile.js
 
 ### ESLint Plugins ###
 
-  * [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+Plugins available for popular editor environments:
 
-  * [Sublime Text](https://github.com/SublimeLinter/SublimeLinter-eslint)
-
-  * [Emacs](http://www.flycheck.org/en/latest/languages.html#javascript)
-
-  * [vim](https://github.com/w0rp/ale)
-
-  * [Official Integration List](https://eslint.org/docs/user-guide/integrations)
-
-[jslint]: https://github.com/jshint/jshint
-[eslint]: https://github.com/eslint/eslint
+* Webstorm
+* Visual Studio Code
+* vim
+* etc...
+* [Official Integration List](https://eslint.org/docs/user-guide/integrations)

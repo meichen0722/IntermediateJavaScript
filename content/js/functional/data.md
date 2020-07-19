@@ -142,3 +142,16 @@ const add1ToNum = num => 1 + num
 invokeWith42((num) => add1ToNum(num)) // is the same as...
 invokeWith42(add1ToNum)
 ```
+
+### Exercise
+
+  #. Open `src/www/js/functional/higher-order.test.js`
+  
+  #. Follow directions in the `it` statements
+  
+  #. All tests should keep passing 
+
+```shell
+$ cd src
+$ yarn jest higher-order.test.js --watch
+```

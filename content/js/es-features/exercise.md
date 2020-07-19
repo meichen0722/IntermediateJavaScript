@@ -1,6 +1,4 @@
 
-## Exercise
-
 ### Exercise
 
   #. Open `src/www/js/es-syntax/syntax.test.js`
