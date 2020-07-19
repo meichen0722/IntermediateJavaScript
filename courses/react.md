@@ -28,76 +28,71 @@ The source code for this course can be found at the following URL:
 
 Day 1
 
-* JavaScript Recap
+* JS Review
+* JS Language
 * Functional Programming (Basics)
-* React Basics
+* The DOM
 
 ### What's In Store {.unnumbered}
 
 Day 2
 
+* React Basics
 * Interactive React
-* React Design Patterns
-* Composition vs Inheritance
+* JS Tooling
+* React Design Patterns (pt 1)
 
 ### What's In Store {.unnumbered}
 
 Day 3
 
-* Forms - uncontrolled components
-* React Hook Form
-* React Bootstrap
-* Refs
-* Lifecycles
-* Async React
+* Forms
+* Lifecycle
+* Testing
 
 ### What's In Store {.unnumbered}
 
 Day 4
 
-* JS Tooling
-* JS Testing
-* React Testing
-* E2E Testing
+* Async React
+* React Design Patterns
+* Redux
+* Functional Programming (Ramda)
 
 ### What's In Store {.unnumbered}
 
 Day 5
 
 * Routing
+* Advanced Forms
+* E2E Testing
+
+### What's In Store {.unnumbered}
+
+Day 5
+
 * Redux
 
-# JavaScript Language
+# JS Review
 
 <<(../content/js/es-features/syntax.md)
+<<(../content/js/oop/classes.md)
 
-# JavaScript Hard Parts
+# JS Language
 
 <<(../content/js/this.md)
 <<(../content/js/scope.md)
-
-# The Document Object Model
-
-<<(../content/js/dom/index.md)
 
 # Functional Programming
 
 <<(../content/js/functional/basics.md)
 <<(../content/js/functional/data.md)
 <<(../content/js/functional/array.md)
-<<(../content/js/functional/closures.md)
-<<(../content/js/functional/this.md)
 
-# Developer Tools
-
-<<(../content/js/tools/packages/index.md)
-<<(../content/js/tools/lint/index.md)
-<<(../content/js/tools/babel/index.md)
-<<(../content/js/tools/webpack/index.md)
-
-# Web Development
+# The Document Object Model
 
 <<(../content/html/refresher.md)
+<<(../content/js/dom/index.md)
 
 # React Basics
 
@@ -111,6 +106,18 @@ Day 5
 <<(../content/js/react/lists.md)
 <<(../content/js/react/state-hooks.md)
 
+# Developer Tools
+
+<<(../content/js/tools/packages/index.md)
+<<(../content/js/tools/lint/index.md)
+<<(../content/js/tools/babel/index.md)
+<<(../content/js/tools/webpack/index.md)
+
+# React Design Patterns pt 1
+
+<<(../content/js/react/composition.md)
+<<(../content/js/react/bootstrap.md)
+
 # Forms
 
 <<(../content/js/react/forms-controlled.md)
@@ -119,34 +126,17 @@ Day 5
 
 # React Lifecycle
 
+<<(../content/js/react/lifting-state.md)
 <<(../content/js/react/lifecycle.md)
 <<(../content/js/react/lifecycle-hooks.md)
 
-# React Design Patterns
+# Testing
 
-<<(../content/js/react/composition.md)
-<<(../content/js/react/lifting-state.md)
-<<(../content/js/react/hoc.md)
-<<(../content/js/react/render-props.md)
+<<(../content/js/testing.md)
 
-TODO compound components
+TODO
 
 # Async React
-
-
-# FP Intermediate
-
-## Functional Programming Intermediate
-
-<<(../content/js/functional/state.md)
-
-# Object-Oriented Programming
-
-## Object-Oriented Programming
-
-<<(../content/js/oop/classes.md)
-
-# Asynchronous Programming
 
 <<(../content/js/async/runtime/index.md)
 <<(../content/js/async/promises/index.md)
@@ -154,6 +144,34 @@ TODO compound components
 <<(../content/js/apis/fetch/lab.md)
 <<(../content/js/async/await/index.md)
 
-# Testing
+# React Design Patterns
 
-<<(../content/js/testing.md)
+<<(../content/js/react/hoc.md)
+<<(../content/js/react/render-props.md)
+
+TODO compound components
+
+# Redux
+
+TODO
+
+# Functional Programming (Ramda)
+
+<<(../content/js/functional/state.md)
+
+# Routing
+
+TODO
+
+# Advanced Forms
+
+TODO
+
+# E2E Testing
+
+TODO
+
+# Extra
+
+<<(../content/js/functional/closures.md)
+<<(../content/js/functional/this.md)
