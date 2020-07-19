@@ -115,6 +115,7 @@ Day 5
 
 <<(../content/js/react/forms-controlled.md)
 <<(../content/js/react/crud.md)
+<<(../content/js/react/refs.md)
 
 # React Lifecycle
 
