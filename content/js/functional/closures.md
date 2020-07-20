@@ -54,7 +54,6 @@ Using closures to create truly private variables in JavaScript:
 
 (Open `src/examples/js/closure.html` and play in the debugger.)
 
-
 ### Creating Private Variables
 
 Using closures to create truly private variables in JavaScript:
@@ -73,6 +72,13 @@ const x = createContainer()
 x.privateVar // undefined
 x.getPrivateVar() // 42
 ```
+
+### Objects and arrays are like data containers
+
+* When a closure references an `Object` or `Array`...
+* They refer to the *container*, not the contents at the time
+
+(Demo)
 
 ### Exercise
 

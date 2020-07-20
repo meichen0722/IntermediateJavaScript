@@ -75,7 +75,9 @@ Day 5
 # JS Language
 
 <<(../content/js/this.md)
+<<(../content/js/functional/this.md)
 <<(../content/js/scope.md)
+<<(../content/js/functional/closures.md)
 
 # Functional Programming
 
@@ -164,8 +166,3 @@ TODO
 # E2E Testing
 
 TODO
-
-# Extra
-
-<<(../content/js/functional/closures.md)
-<<(../content/js/functional/this.md)
