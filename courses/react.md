@@ -32,12 +32,12 @@ Day 1
 * JS Language
 * Functional Programming (Basics)
 * The DOM
+* React Basics
 
 ### What's In Store {.unnumbered}
 
 Day 2
 
-* React Basics
 * Interactive React
 * JS Tooling
 * React Design Patterns (pt 1)
@@ -49,12 +49,12 @@ Day 3
 * Forms
 * Lifecycle
 * Testing
+* Async React
 
 ### What's In Store {.unnumbered}
 
 Day 4
 
-* Async React
 * React Design Patterns
 * Redux
 * Functional Programming (Ramda)
@@ -66,12 +66,6 @@ Day 5
 * Routing
 * Advanced Forms
 * E2E Testing
-
-### What's In Store {.unnumbered}
-
-Day 5
-
-* Redux
 
 # JS Review
 
