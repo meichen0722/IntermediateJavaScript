@@ -1,4 +1,17 @@
 .App {
-  padding: 100px;
+  padding: 50px;
   width: 700px;
+}
+
+hr {
+  border: none;
+  margin-bottom: 30px;
+}
+
+.actions {
+  padding: 50px;
+
+  > * + * {
+    margin-left: 10px;
+  }
 }
