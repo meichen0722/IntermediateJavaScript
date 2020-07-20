@@ -34,6 +34,8 @@ We're going to walk through installation of the following:
 
 ### `nvm`
 
+**This is for macOS and Linux only. Windows users can just go to nodejs.org and install there.**
+
 You can install a single version of Node.js, but the more common practice is to install `nvm` (Node Version Manager), which allows you manage multiple versions of node on the same system.
 
 ```
