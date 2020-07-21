@@ -84,7 +84,7 @@ $ npm --version
 
 ### `yarn`
 
-`npm` is nice and all, but `yarn` (a competitor to `npm`) is better.
+`npm` is nice and all, but `yarn` (a competitor to `npm`) is better. If you're on Windows, you can use the yarn installer from their website. If you're on Mac/Linux, you can do this command from the CLI:
 
 ```bash
 $ curl -o- -L https://yarnpkg.com/install.sh | bash
@@ -134,6 +134,8 @@ $ cd src
 $ yarn
 $ yarn start
 ```
+
+If you're a Windows user, you may also run into other security blocks like Windows Defender, just go ahead and cancel/ignore/permit any warnings.
 
 Then visit <http://localhost:3000>. This will lead you to various interactive pages and test suites that will be used throughout the course.
 

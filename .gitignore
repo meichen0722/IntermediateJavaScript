@@ -4,4 +4,4 @@
 src/www/js/tools/webpack/dist
 src/www/js/alternatives/typescript/**/*.js
 /src/babel-out/
-/slides
+/slides/*.pdf

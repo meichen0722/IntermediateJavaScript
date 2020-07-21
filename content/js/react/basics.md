@@ -191,3 +191,7 @@ const greeting = (
   * CHALLENGE: Search npm for a date management package
     * Add as a dependency and use it to display the date.
     * Add dependencies with `yarn add [package]`
+
+<div class="notes">
+Sandbox to start: https://codesandbox.io/s/weathered-rain-18q32?file=/src/index.js
+</div>
