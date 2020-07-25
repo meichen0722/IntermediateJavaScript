@@ -198,10 +198,10 @@ You can use `Array#includes` to your advantage:
 
 ### Demo
 
+Demo [(link)](https://codesandbox.io/s/forms-controlled-ikq0y)
+
 ### Exercise
 
 **Exercise 1**: [(link)](https://codesandbox.io/s/magical-surf-qtfh4?file=/src/App.js)
 
 **Exercise 2**: [(link)](https://codesandbox.io/s/muddy-bash-1opxk?file=/src/App.js)
-
-**Exercise 3**: [(link)](https://codesandbox.io/s/compassionate-fermat-bwmus?file=/src/App.js)
