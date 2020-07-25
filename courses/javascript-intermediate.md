@@ -82,11 +82,11 @@ This JavaScript course is delivered during two days.
 
 # Asynchronous Programming
 
-<<(../content/js/async/runtime/index.md)
-<<(../content/js/async/promises/index.md)
+<<(../content/js/async/runtime.md)
+<<(../content/js/async/promises.md)
 <<(../content/js/apis/fetch/index.md)
 <<(../content/js/apis/fetch/lab.md)
-<<(../content/js/async/await/index.md)
+<<(../content/js/async/await.md)
 
 # Web Application Development
 

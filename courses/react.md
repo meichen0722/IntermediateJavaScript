@@ -102,13 +102,6 @@ Day 5
 <<(../content/js/react/lists.md)
 <<(../content/js/react/state-hooks.md)
 
-# Developer Tools
-
-<<(../content/js/tools/packages/index.md)
-<<(../content/js/tools/lint/index.md)
-<<(../content/js/tools/babel/index.md)
-<<(../content/js/tools/webpack/index.md)
-
 # React Design Patterns pt 1
 
 <<(../content/js/react/composition.md)
@@ -118,7 +111,6 @@ Day 5
 
 <<(../content/js/react/forms-controlled.md)
 <<(../content/js/react/crud.md)
-<<(../content/js/react/refs.md)
 
 # React Lifecycle
 
@@ -126,19 +118,16 @@ Day 5
 <<(../content/js/react/lifecycle.md)
 <<(../content/js/react/lifecycle-hooks.md)
 
+# Async React
+
+<<(../content/js/async/promises.md)
+<<(../content/js/async/async-await.md)
+
 # Testing
 
 <<(../content/js/testing.md)
 
 TODO
-
-# Async React
-
-<<(../content/js/async/runtime/index.md)
-<<(../content/js/async/promises/index.md)
-<<(../content/js/apis/fetch/index.md)
-<<(../content/js/apis/fetch/lab.md)
-<<(../content/js/async/await/index.md)
 
 # React Design Patterns
 
@@ -150,6 +139,11 @@ TODO compound components
 # Redux
 
 TODO
+
+# Overflow
+
+<<(../content/js/react/refs.md)
+
 
 # Functional Programming (Ramda)
 

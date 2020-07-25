@@ -1,31 +1,33 @@
-### What are `async` Functions? ###
+## `async` and `await`
+
+### What are `async` Functions?
 
 Functions marked as `async` become asynchronous and automatically
 return promises:
 
-~~~ {.javascript insert="../../../../src/examples/js/async-await.js" token="async"}
+~~~ {.javascript insert="../../../src/examples/js/async-await.js" token="async"}
 ~~~
 
-### The `await` Keyword ###
+### The `await` Keyword
 
 Functions marked as `async` get to use the `await` keyword:
 
-~~~ {.javascript insert="../../../../src/examples/js/async-await.js" token="await"}
+~~~ {.javascript insert="../../../src/examples/js/async-await.js" token="await"}
 ~~~
 
 Question: What does the `example2` function return?
 
-### Example of `async`/`await` ###
+### Example of `async`/`await`
 
-~~~ {.javascript insert="../../../../src/examples/js/async-await.js" token="getArtist"}
+~~~ {.javascript insert="../../../src/examples/js/async-await.js" token="getArtist"}
 ~~~
 
-### An Even Better Example of `async`/`await` ###
+### An Even Better Example of `async`/`await`
 
-~~~ {.javascript insert="../../../../src/examples/js/async-await.js" token="getArtistP"}
+~~~ {.javascript insert="../../../src/examples/js/async-await.js" token="getArtistP"}
 ~~~
 
-### Exercise: Using `async` and `await` ###
+### Exercise: Using `async` and `await`
 
   #. Start your server
   

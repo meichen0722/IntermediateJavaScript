@@ -1,4 +1,0 @@
-Promises {#promises}
---------------------
-
-<<(basics.md)
