@@ -9,12 +9,13 @@
   "dependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-proposal-decorators": "^7.8.3",
     "@babel/plugin-proposal-private-methods": "^7.8.3",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/polyfill": "^7.8.7",
     "@babel/preset-env": "^7.9.5",
     "jest": "^25.4.0",
+    "json-server": "^0.16.1",
     "mockapie": "git://github.com/pjones/mockapie.git",
     "nightwatch": "^0.9.8",
     "ramda": "^0.27.0",
@@ -23,7 +24,8 @@
   "scripts": {
     "chat": "node bin/chat-server.js",
     "start": "node bin/server.js",
-    "test": "jest"
+    "test": "jest",
+    "db": "json-server --watch data/db.json -p 4000"
   },
   "jest": {
     "testRegex": "(.*.test.jsx?$|/__tests__/.*\\.jsx?$)"
