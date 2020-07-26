@@ -127,6 +127,10 @@ Day 5
 
 <<(../content/js/react/redux.md)
 
+# Routing
+
+<<(../content/js/react/router.md)
+
 # Testing
 
 <<(../content/js/testing.md)
