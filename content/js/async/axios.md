@@ -2,6 +2,16 @@
 
 ### REST endpoints
 
+* **RE**presentational **S**tate **T**ransfer
+* Envisioned in 2000 for a Ph.D. thesis [(link)](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
+* Core principles:
+  * Client-server architecture
+  * Stateless
+  * Cacheable
+  * Uniform interface
+
+### REST endpoints
+
 * Describe routes by the **resources** involved
 * Route w/o an ID refers to the "collection"
   * `/todos`
@@ -20,6 +30,13 @@ HTTP requests have a **method** to describe intent
 * POST - create
 * PUT - update
 * DELETE - delete
+
+Links to dive deeper:
+
+[(Link 1)](https://www.codecademy.com/articles/what-is-rest)
+[(Link 2)](https://www.restapitutorial.com/lessons/restfulresourcenaming.html)
+[(Link 3)](https://www.infoq.com/articles/rest-introduction/)
+[(Link 4)](https://chelseatroy.com/2018/08/01/api-design-part-1-before-there-was-rest)
 
 ### REST endpoints
 
@@ -47,7 +64,11 @@ $ curl -X GET http://localhost:4000/todos/1
 $ curl -d '{ "text": "Practice REST", "done": false }' \
   -H "Content-Type: application/json" \
   -X POST http://localhost:4000/todos
+```
 
+Returns the newly created member:
+
+```
 {
   "id": 4,
   "text": "Practice REST",
@@ -63,7 +84,11 @@ $ curl -d '{ "text": "Practice REST", "done": false }' \
 $ curl -d '{ "text": "Practice REST", "done": true }' \
    -H "Content-Type: application/json" \
    -X PUT http://localhost:4000/todos/4
+```
 
+Returns the newly updated member:
+
+```
 {
   "id": 4,
   "text": "Practice REST",
@@ -161,7 +186,10 @@ axios.get('/todos', { params: { page: 2 } })
   })
 
 // Async-await
-const { data } = axios.get('/todos', { params: { page: 2 } })
+const { data } = await axios.get(
+  '/todos', 
+  { params: { page: 2 } }
+)
 console.log(data) // [...]
 ```
 
@@ -172,12 +200,13 @@ try {
   const { data } = await api.get('/todos/invalidId')
 } catch (error) {
   if (error.response) {
-    // The request was made and the server responded with a status code
-    // that falls out of the range of 2xx
+    // The request was made and the server responded with 
+    // a status code that falls out of the range of 2xx
     console.log(error.response.data)
     console.log(error.response.status)
   } else {
-    // Something happened in setting up the request that triggered an Error
+    // Something happened in setting up the request 
+    // that triggered an Error
     console.log('Error', error.message)
   }
 }
@@ -203,7 +232,7 @@ Checking for network errors:
 
 ```javascript
 export const isAxiosNetworkError = (e) => (
-  e.code === 'ECONNABORTED' || (!e.response && e.message === 'Network Error')
+  !e.response && e.message === 'Network Error'
 )
 ```
 
@@ -212,9 +241,16 @@ export const isAxiosNetworkError = (e) => (
 ```javascript
 import axios from 'axios'
 
-const api = axios.create({ baseURL: 'http://localhost:4000' })
+// create the instance
+const api = axios.create({ 
+  // specify a base URL other than current domain
+  baseURL: 'http://localhost:4000' 
+})
+
+// adding auth
 api.defaults.headers.common['Authorization'] = AUTH_TOKEN
 
+// making calls with your API instance
 api.get(/* ... */)
 ```
 
@@ -228,19 +264,22 @@ Other functionality you can set:
 * Specify response type / response encoding
 * Cancel a request
 
+Much of it you will learn on a need to know basis.
+
+Docs: [(link)](https://github.com/axios/axios)
+
 ### Exercise
 
-1. Turn on the DB server:
+Turn on your local DB server:
 
 ```
 $ cd src
 $ yarn db
 ```
 
-1. Practice GET, POST, PUT, DELETE using `curl`
 1. Practice GET, POST, PUT, DELETE using Postman
 1. Practice GET, POST, PUT, DELETE using `axios`
 1. Practice using query params [(docs link)](https://github.com/typicode/json-server#filter)
-  1. Request the first 2 todos
-  1. Request only uncompleted todos
-  1. Request the first uncompleted todo
+  * Request the first 2 todos
+  * Request only uncompleted todos
+  * Request the first uncompleted todo

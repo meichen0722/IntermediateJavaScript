@@ -25,7 +25,7 @@ Why?
 
 ### What is Problematic About this Code?
 
-* Notice how `.then` 
+* Notice the `.then`... 
 * It sets `todos` to a *new array* on every render.
 * The new array means the state has changed, which triggers a render...
 * Which triggers another network call...
@@ -67,7 +67,7 @@ export const App = () => {
 
 ### Network calls when props change
 
-```
+```javascript
 export const Loader = ({ resource }) => {
   const [collection, setCollection] = useState([])
 
