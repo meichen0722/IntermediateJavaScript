@@ -110,18 +110,22 @@ Day 5
 # Forms
 
 <<(../content/js/react/forms-controlled.md)
+<<(../content/js/react/lifting-state.md)
 <<(../content/js/react/crud.md)
 
 # React Lifecycle
 
-<<(../content/js/react/lifting-state.md)
 <<(../content/js/react/lifecycle.md)
 <<(../content/js/react/lifecycle-hooks.md)
 
 # Async React
 
-<<(../content/js/async/promises.md)
-<<(../content/js/async/async-await.md)
+<<(../content/js/async/axios.md)
+<<(../content/js/react/async.md)
+
+# Redux
+
+<<(../content/js/react/redux.md)
 
 # Testing
 
@@ -143,7 +147,8 @@ TODO
 # Overflow
 
 <<(../content/js/react/refs.md)
-
+<<(../content/js/async/promises.md)
+<<(../content/js/async/async-await.md)
 
 # Functional Programming (Ramda)
 
