@@ -151,8 +151,18 @@ assocPath(['a', 'b'], 42, { a: { b: 0 } }])
 * Their indices are simply like keys on an object
 
 ```javascript
-const markDone = (index) => {
-  setTodos(assocPath([index, 'done'], true, todos))
+export const App = () => {
+  // ...
+  const markDone = (index) => () => {
+    setTodos(assocPath([index, 'done'], true, todos))
+  }
+  return (
+    <ul className="list-group">
+      {todos.map((todo, i) => (
+        <Todo key={todo.id} onDone={markDone(i)} />
+      ))}
+    </ul>
+  )
 }
 ```
 

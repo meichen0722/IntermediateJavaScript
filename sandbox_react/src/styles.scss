@@ -15,3 +15,11 @@ hr {
     margin-left: 10px;
   }
 }
+
+.spaced > * + * {
+  margin-left: 10px;
+}
+
+.done {
+  text-decoration: line-through;
+}
