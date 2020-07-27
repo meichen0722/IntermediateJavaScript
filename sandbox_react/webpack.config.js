@@ -33,6 +33,7 @@ module.exports = {
     contentBase: path.join(__dirname, "public/"),
     port: PORT,
     publicPath: `http://localhost:${PORT}/dist/`,
+    historyApiFallback: true,
     clientLogLevel: 'error'
   },
 }
