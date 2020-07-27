@@ -20,7 +20,8 @@
 - [ ] demonstrate using `super` in a method
 - [ ] show class mixins
 - [ ] add survey links for modules
-- [ ] pass-through props
+- [ ] pass-through props on Composition
+- [ ] 
 
 Idea for FP intro:
 

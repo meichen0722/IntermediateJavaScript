@@ -56,10 +56,6 @@ export const App = () => {
 
 Visualization: [(link)](http://localhost:3000/js/react/one-way-data/index.html)
 
-### Making a Toggle Component
-
-Demo: [(link)](https://codesandbox.io/s/withered-night-2qrld?file=/src/App.js)
-
 ### Exercise
 
 **Exercise 1**: [(link)](https://codesandbox.io/s/floral-cherry-7jxr0?file=/src/App.js)
