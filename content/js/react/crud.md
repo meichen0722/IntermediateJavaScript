@@ -69,10 +69,6 @@ A: Faster! All about performance.
 setTodos([...todos, newTodo])
 ```
 
-### Immutable State
-
-Demo [(link)](https://codesandbox.io/s/amazing-brown-ymvzc?file=/src/App.js)
-
 ### Delete
 
 * Typically we identify the item to remove by its ID
@@ -88,10 +84,6 @@ const removeTodo = (id) => {
   setTodos(todos.filter(todo => todo.id !== id))
 }
 ```
-
-### Delete
-
-Demo [(link)](https://codesandbox.io/s/festive-christian-ecgpc?file=/src/App.js)
 
 ### Update
 
@@ -165,8 +157,6 @@ export const App = () => {
   )
 }
 ```
-
-### Demo
 
 ### Exercise
 

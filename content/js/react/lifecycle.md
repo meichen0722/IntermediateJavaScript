@@ -101,10 +101,6 @@ class BombSquad extends React.Component {
 }
 ```
 
-### Demo
-
-[(link)](https://codesandbox.io/s/sharp-solomon-mty7y?file=/src/App.js:1234-1922)
-
 ### Exercise
 
 [(link)](https://codesandbox.io/s/charming-golick-e1135?file=/src/App.js)

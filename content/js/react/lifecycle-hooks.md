@@ -202,3 +202,6 @@ Read more: [(link)](https://blog.logrocket.com/how-to-get-previous-props-state-w
 * Your one-stop-shop for *all* lifecycle methods
   * ...almost all of the time
 
+### Exercise
+
+**Exercise**: [(link)](https://codesandbox.io/s/lifecycle-hooks-u642i?file=/src/App.js)
