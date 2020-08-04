@@ -1,33 +1,37 @@
 {
-    "todos": [
-        {
-            "id": 1,
-            "text": "Learn JS",
-            "done": false
-        },
-        {
-            "id": 2,
-            "text": "Learn React",
-            "done": true
-        },
-        {
-            "id": 3,
-            "text": "Profit",
-            "done": false
-        }
-    ],
-    "items": [
-        {
-            "id": 1,
-            "item": "Apples",
-            "qty": 3,
-            "done": true
-        },
-        {
-            "id": 2,
-            "item": "Bananas",
-            "qty": 6,
-            "done": false
-        }
-    ]
+  "todos": [
+    {
+      "id": 1,
+      "text": "Learn JS",
+      "done": false
+    },
+    {
+      "id": 2,
+      "text": "Learn React",
+      "done": true
+    },
+    {
+      "id": 3,
+      "text": "Profit",
+      "done": false
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "item": "Apples",
+      "qty": 3,
+      "done": false
+    },
+    {
+      "id": 3,
+      "item": "Clems",
+      "qty": "35"
+    },
+    {
+      "id": 4,
+      "item": "Bananas",
+      "qty": "2"
+    }
+  ]
 }
