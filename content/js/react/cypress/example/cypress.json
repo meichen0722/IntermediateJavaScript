@@ -1,0 +1,10 @@
+{
+    "experimentalComponentTesting": true,
+    "componentFolder": "src",
+    "testFiles": "**/*cyspec.js",
+    "nodeVersion": "system",
+    "video": false,
+    "env": {
+        "coverage": false
+    }
+}
