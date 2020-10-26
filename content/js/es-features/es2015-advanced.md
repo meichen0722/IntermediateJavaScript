@@ -45,7 +45,7 @@ Object.is(+0, -0);   // false
 
 ### Others
 
-  * `Set` and `WeekSet`
+  * `Set` and `WeakSet`
 
      Mathematical sets, as well as a weak version.
 

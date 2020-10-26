@@ -69,7 +69,9 @@ Day 5
 
 # JS Review
 
-<<(../content/js/es-features/syntax.md)
+<<(../content/js/es-features/es2015.md)
+<<(../content/js/es-features/es2018-obj.md)
+<<(../content/js/es-features/exercise.md)
 <<(../content/js/oop/classes.md)
 
 # JS Language
@@ -95,6 +97,8 @@ Day 5
 <<(../content/js/react/basics.md)
 <<(../content/js/react/components.md)
 <<(../content/js/react/props.md)
+<<(../content/js/react/conditional-rendering.md)
+<<(../content/js/react/ui-to-components.md)
 
 # Interactive React
 

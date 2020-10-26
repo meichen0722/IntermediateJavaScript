@@ -140,56 +140,6 @@ class Counter extends React.Component {
 }
 ```
 
-### Conditional Rendering (If Statements)
-
-Sometimes you want to conditionally show something:
-
-```javascript
-<div>
-  {condA && (
-    <p>Renders if condA is true</p>
-  )}
-</div>
-```
-
-Example [(link)](https://codesandbox.io/s/infallible-colden-0ojkv?file=/src/App.js)
-
-### Conditional Rendering (If/Else Statements)
-
-You can also have conditional if/else logic:
-
-```javascript
-<div>
-  {condA ? (
-    <p>Renders if condA is true</p>
-  ) : (
-    <p>Renders if condA is false</p>
-  )}
-</div>
-```
-
-### Nested Conditionals
-
-It's fairly common to make nested ternaries.
-
-```javascript
-<div>
-  {condA ? (
-    condB ? (
-      <p>condA true | condB true</p>
-    ) : (
-      <p>condA true | condB false</p>
-    )
-  ) : (
-    <p>condA false</p>
-  )}
-</div>
-```
-
-### Demo
-
-Example [(link)](https://codesandbox.io/s/sad-bogdan-fvkd2?file=/src/App.js)
-
 ### What's with the Funky Syntax
 
 * `state` and `upToEleven` are called **public instance fields** [(link)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields)
@@ -216,6 +166,10 @@ class SpinalTapAmp extends React.Component {
   // ...
 }
 ```
+
+### Demo
+
+Example [(link)](https://codesandbox.io/s/sad-bogdan-fvkd2?file=/src/App.js)
 
 ### Exercise
 

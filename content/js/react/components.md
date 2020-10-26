@@ -6,14 +6,6 @@
 * Components can contain other components.
 * Semantically meaningful (e.g. `TodosList`, `Header`, `ProfileCard`)
 
-### Visualizing Components
-
-![](./images/trello-components.jpg)
-
-### Visualizing Components
-
-![](./images/trello-components-annotated.jpg)
-
 ### Components
 
 Components can be used in JSX like other HTML elements.
