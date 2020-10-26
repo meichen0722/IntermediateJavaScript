@@ -1,3 +1,3 @@
 # React Introduction
 
-[Slides](https://drive.google.com/file/d/1Ciqt2HWHrrHbY0SvJKgjeLo5eet3FzQh/view?usp=sharing)
+[Slides](https://drive.google.com/file/d/1ydPI962yBoRNFEbRw8qezSZzqRCnH0yR/view?usp=sharing)

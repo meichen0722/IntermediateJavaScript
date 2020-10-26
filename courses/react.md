@@ -28,10 +28,7 @@ The source code for this course can be found at the following URL:
 
 Day 1
 
-* JS Review
 * JS Language
-* Functional Programming (Basics)
-* The DOM
 * React Basics
 
 ### What's In Store {.unnumbered}
@@ -67,30 +64,17 @@ Day 5
 * Advanced Forms
 * E2E Testing
 
+### Extra Stuff
+
+* Functional Programming (Basics)
+* The DOM
+
 # JS Review
 
 <<(../content/js/es-features/es2015.md)
 <<(../content/js/es-features/es2018-obj.md)
 <<(../content/js/es-features/exercise.md)
 <<(../content/js/oop/classes.md)
-
-# JS Language
-
-<<(../content/js/this.md)
-<<(../content/js/functional/this.md)
-<<(../content/js/scope.md)
-<<(../content/js/functional/closures.md)
-
-# Functional Programming
-
-<<(../content/js/functional/basics.md)
-<<(../content/js/functional/data.md)
-<<(../content/js/functional/array.md)
-
-# The Document Object Model
-
-<<(../content/html/refresher.md)
-<<(../content/js/dom/index.md)
 
 # React Basics
 
@@ -173,3 +157,21 @@ TODO
 # E2E Testing
 
 TODO
+
+# JS Language
+
+<<(../content/js/this.md)
+<<(../content/js/functional/this.md)
+<<(../content/js/scope.md)
+<<(../content/js/functional/closures.md)
+
+# Functional Programming
+
+<<(../content/js/functional/basics.md)
+<<(../content/js/functional/data.md)
+<<(../content/js/functional/array.md)
+
+# The Document Object Model
+
+<<(../content/html/refresher.md)
+<<(../content/js/dom/index.md)
