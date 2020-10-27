@@ -138,15 +138,13 @@ class Greeting extends React.Component {
 
 **Exercise 1**
 
-Using your previous sandbox code...
+Using your previous sandbox code or using this starter sandbox [(link)](https://codesandbox.io/s/romantic-grothendieck-d3ope?file=/src/App.js)...
 
 * Extract a `Title` component
 * Extract a `TodaysDate` component ("Today's date: ...")
 * Extract a `FormatDate` component that takes a `date` and displays in mm/dd/YYYY
 * Extract and re-use a `ShoppingItem` component
 * CHALLENGE: Be able to pass a `done` boolean prop to `ShoppingItem`, which applies a `.done` class to the `<li>` element
-
-Or use the starter sandbox [(link)](https://codesandbox.io/s/romantic-grothendieck-d3ope?file=/src/App.js)
 
 **Exercise 2**
 

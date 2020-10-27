@@ -173,14 +173,6 @@ Example [(link)](https://codesandbox.io/s/sad-bogdan-fvkd2?file=/src/App.js)
 
 ### Exercise
 
-Exercise 1:
-  * Practice showing/hiding an element by clicking a button
+Exercise 1: sandbox [(link)](https://codesandbox.io/s/state-exercise-1-bxn0b?file=/src/App.js)
 
-Exercise 2:
-  * Create an app with two buttons: (+) and (-)
-  * Have a counter display that increments and decrements
-  * Color it red when it's below 0, green > 5, and blue > 10. Black otherwise.
-
-Exercise 3:
-  * Implement the media control buttons for a song player
-  * Sandbox [(link)](https://codesandbox.io/s/trusting-chebyshev-wlbv7?file=/src/App.js)
+Exercise 2: sandbox [(link)](https://codesandbox.io/s/trusting-chebyshev-wlbv7?file=/src/App.js)

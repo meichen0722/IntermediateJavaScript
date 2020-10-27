@@ -133,7 +133,7 @@ class Greeting extends React.Component {
 
 ### Exercise
 
-* Using your previous sandbox code...
+* Using your previous sandbox code or this starter sandbox [(link)](https://codesandbox.io/s/fervent-liskov-ncjoz?file=/src/App.js)...
   * Extract a `Header` component
   * Extract a `TodaysDate` component
   * Extract a `ShoppingList` component
@@ -141,5 +141,3 @@ class Greeting extends React.Component {
 * Then refactor them components as **class components**
 
 These components won't do much, we're just practicing creating components and describing our UI with components.
-
-Starter sandbox [(link)](https://codesandbox.io/s/fervent-liskov-ncjoz?file=/src/App.js)

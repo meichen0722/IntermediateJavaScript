@@ -1,4 +1,9 @@
 ---
+mainfont: DejaVu Sans
+linkcolor: NavyBlue
+urlcolor: NavyBlue
+toccolor: Red
+
 title: "React"
 
 logo: /home/andrew/Projects/webdev/data/images/logo.png
@@ -35,37 +40,36 @@ Day 1
 
 Day 2
 
-* Interactive React
-* JS Tooling
-* React Design Patterns (pt 1)
+* React Basics
 
 ### What's In Store {.unnumbered}
 
 Day 3
 
-* Forms
-* Lifecycle
-* Testing
-* Async React
+* Interactive React
+* React Design Patterns (pt 1)
 
 ### What's In Store {.unnumbered}
 
 Day 4
 
-* React Design Patterns
-* Redux
-* Functional Programming (Ramda)
+* Forms
+* Lifecycle
 
 ### What's In Store {.unnumbered}
 
 Day 5
 
+* Async React
 * Routing
-* Advanced Forms
-* E2E Testing
+* Testing
 
 ### Extra Stuff
 
+* Redux
+* Functional Programming (Ramda)
+* React Design Patterns pt 2
+* JS Tooling
 * Functional Programming (Basics)
 * The DOM
 
@@ -81,8 +85,8 @@ Day 5
 <<(../content/js/react/basics.md)
 <<(../content/js/react/components.md)
 <<(../content/js/react/props.md)
-<<(../content/js/react/conditional-rendering.md)
 <<(../content/js/react/ui-to-components.md)
+<<(../content/js/react/conditional-rendering.md)
 
 # Interactive React
 
@@ -123,18 +127,14 @@ Day 5
 
 <<(../content/js/testing.md)
 
-TODO
-
 # React Design Patterns
 
 <<(../content/js/react/hoc.md)
 <<(../content/js/react/render-props.md)
 
-TODO compound components
-
-# Redux
-
-TODO
+<div class="notes">
+    TODO compound components
+</div>
 
 # Overflow
 
@@ -145,18 +145,6 @@ TODO
 # Functional Programming (Ramda)
 
 <<(../content/js/functional/state.md)
-
-# Routing
-
-TODO
-
-# Advanced Forms
-
-TODO
-
-# E2E Testing
-
-TODO
 
 # JS Language
 
