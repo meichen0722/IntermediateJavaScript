@@ -9,7 +9,7 @@
 ```json
 {
   "jest": {
-    "setupTestFrameworkScriptFile": "<rootDir>/setup_jest.js"
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js"
   }
 }
 ```
@@ -36,7 +36,7 @@ Each of the following functions takes a callback as an argument:
 
 These functions can be invoked from any module, as long as the calling context is within a spec file!
 
-~~~ {.javascript}
+```javascript
 // setup.js
 
 const startWithLoggedInUser = () => {
@@ -48,11 +48,11 @@ const startWithLoggedInUser = () => {
     // clean up app state...
   })
 }
-~~~
+```
 
 ### Abstracting Life Cycle Callbacks Use
 
-~~~ {.javascript}
+```javascript
 // todos.js
 
 describe('user todos', () => {
@@ -60,4 +60,20 @@ describe('user todos', () => {
 
   it('should read user todos', () => { /* ... */ })
 })
-~~~
+```
+
+### Pending Tests
+
+Tests can be marked as pending:
+
+```javascript
+it.todo('should do a thing')
+```
+
+### Focusing on Tests
+
+You can mark only one test to be run in the file:
+
+```javascript
+it.only('should do a thing', () => {})
+```

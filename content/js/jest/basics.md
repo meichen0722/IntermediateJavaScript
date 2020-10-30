@@ -24,13 +24,10 @@ describe('#add', () => {
 
 ### Running Jest Tests
 
-  #. `yarn add jest`
-
-  #. Make a `*.spec.js` file
-
-  #. Run `yarn jest`
-
-Yes, it's just that easy.
+  - `yarn add jest`
+  - Make a `*.test.js` file
+  - Run `yarn jest`, you're done!
+  - Continuously watch: `yarn jest --watch`
 
 ### Most Common Matchers
 
