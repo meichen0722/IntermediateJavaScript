@@ -6,22 +6,13 @@ describe('Jest Exercises 1 and 2', () => {
 
     // Exercise 1:
     //
-    // Write a test that verifies that the `add' method of the
-    // `WeirdAdder' class correctly sums and returns its two
-    // arguments.
+    // Write a test that verifies that the `add` method of the
+    // `WeirdAdder' class correctly returns the sum of two arguments
 
     it('should add two numbers together', () => {})
 
     /**************************************************************************/
     // Exercise 2:
-    //
-    // Using Jest spies, write a test that calls the `add' method
-    // and confirm that the `foundOdd' method is also called.
-
-    it('should note when an odd is found', () => {})
-
-    /**************************************************************************/
-    // Exercise 3:
     //
     // Using Jest spies, write a test that `getOddSumsCount` returns the length
     // of odd sums returned by `_getOddSums`.
@@ -29,8 +20,16 @@ describe('Jest Exercises 1 and 2', () => {
     // HINT: provide a spy mock implementation for `_getOddSums` that returns
     // an array of odd sums.
 
-    it('should note an odd is found when isOdd returns true', () => {})
+    it('#getOddSumsCount should return number of odd sums', () => {})
 
-    // TODO add stub example
+    /**************************************************************************/
+    // Exercise 3:
+    //
+    // Write a test where you add an odd sum and check the logger
+    // is invoked with a message about the odd sum.
+    //
+    // HINT: use a Jest stub to track the call.
+
+    it('#add should log the result when an odd sum is produced', () => {})
   })
 })

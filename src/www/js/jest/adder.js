@@ -1,13 +1,14 @@
 export class WeirdAdder {
-  constructor() {
+  constructor(logger = console.log) {
     this.oddSums = []
+    this.logger = logger
   }
 
   add(x, y) {
     let sum = x + y
 
-    if (isOdd(sum)) {
-      return this.foundOdd(sum)
+    if (this._isOdd(sum)) {
+      return this._foundOdd(sum)
     }
 
     return sum
@@ -15,12 +16,13 @@ export class WeirdAdder {
 
   getOddSumsCount() { return this._getOddSums().length }
 
-  _isOdd(value) { return sum % 2 === 1 }
+  _isOdd(value) { return value % 2 === 1 }
 
   _getOddSums() { return this.oddSums }
 
   _foundOdd(n) {
-    console.log(`${n} is odd`)
+    this.logger(`${n} is odd`)
+    this.oddSums.push(n)
     return n
   }
 }

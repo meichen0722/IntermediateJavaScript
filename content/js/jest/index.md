@@ -1,9 +1,6 @@
 <<(basics.md)
-<<(matcher.md)
 <<(life.md)
 <<(pending.md)
-<<(spy.md)
-<<(mock-fn.md)
 <<(timers.md)
 <<(async.md)
 

@@ -110,6 +110,11 @@ Day 5
 <<(../content/js/react/lifecycle.md)
 <<(../content/js/react/lifecycle-hooks.md)
 
+# Testing
+
+<<(../content/js/testing.md)
+<<(../content/js/react/enzyme-basics.md)
+
 # Async React
 
 <<(../content/js/async/axios.md)
@@ -122,10 +127,6 @@ Day 5
 # Routing
 
 <<(../content/js/react/router.md)
-
-# Testing
-
-<<(../content/js/testing.md)
 
 # React Design Patterns
 
