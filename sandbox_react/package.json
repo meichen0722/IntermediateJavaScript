@@ -33,6 +33,11 @@
     "webpack-dev-server": "^3.10.3"
   },
   "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
     "jest": "^26.6.1"
+  },
+  "jest": {
+    "setupFilesAfterEnv": ["<rootDir>/setupTests.js"]
   }
 }

@@ -28,3 +28,7 @@ export const findByText = (text, wrapper, options = {}) => {
 export const sel = curry((dataTestId, wrapper) =>
   wrapper.find(`[data-test-id="${dataTestId}"]`)
 )
+
+export const simulateChange = (wrapper, value) => (
+  wrapper.simulate('change', { target: { value } })
+)

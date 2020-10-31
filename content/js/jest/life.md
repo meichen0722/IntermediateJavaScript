@@ -4,17 +4,15 @@
 
   * Each spec file runs in its **own, isolated environment**
 
-  * `setupTestFrameworkScriptFile`: Shared, one-time setup
+  * `setupFilesAfterEnv`: Setup files run before each test file
 
 ```json
 {
   "jest": {
-    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js"
+    "setupFilesAfterEnv": ["<rootDir>/setupTests.js"]
   }
 }
 ```
-
-  * `setupFiles`: Setup files run once before every test file
 
 ### Life Cycle Callbacks
 
