@@ -75,13 +75,72 @@ setInterval(updateTime, 1000)
  * Exercise 4
  * ============================================
  *
+ * Give the "Click Me" button two click handlers, one that is throttled and
+ * one that is debounced, both with a 500ms delay. When the event handlers
+ * run, have them update the count of event handler calls for the respective
+ * display. Also increment the button click counter for each click.
+ */
+
+let buttonClicks = 0
+let throttledEvents = 0
+let debouncedEvents = 0
+
+const handler1 = () => {
+  throttledEvents += 1
+  document.getElementById('ex4-throttled').innerText = throttledEvents
+}
+
+const handler2 = () => {
+  debouncedEvents += 1
+  document.getElementById('ex4-debounced').innerText = debouncedEvents
+}
+
+const throttledHandler = throttle(handler1, 500)
+const debouncedHandler = debounce(handler2, 500)
+
+document.getElementById('ex4-button').addEventListener('click', () => {
+  buttonClicks += 1
+  document.getElementById('ex4-button-clicks').innerText = buttonClicks
+  throttledHandler()
+  debouncedHandler()
+})
+
+function throttle(func, duration) {
+  let shouldWait = false
+  return function (...args) {
+    if (!shouldWait) {
+      func.apply(this, args)
+      shouldWait = true
+      setTimeout(function () {
+        shouldWait = false
+      }, duration)
+    }
+  }
+}
+
+function debounce(func, duration) {
+  let timeout
+  return function (...args) {
+    const effect = () => {
+      timeout = null
+      return func.apply(this, args)
+    }
+    clearTimeout(timeout)
+    timeout = setTimeout(effect, duration)
+  }
+}
+
+/**
+ * Exercise 5
+ * ============================================
+ *
  * Create a stopwatch display, which displays minutes, seconds, and centiseconds.
  * Something like 01:23.45 is 1 minutes, 23 seconds, 45 centiseconds.
  * The stopwatch begins running when you click "Start" and pauses when you click
  * "Stop".
  */
 
-const stopwatch = document.getElementById('ex4-stopwatch')
+const stopwatch = document.getElementById('ex5-stopwatch')
 stopwatch.innerText = '00:00.00'
 let elapsed = 0
 
@@ -97,9 +156,9 @@ const updateStopwatch = () => {
 }
 
 let stopwatchInterval
-document.getElementById('ex4-start').addEventListener('click', () => {
+document.getElementById('ex5-start').addEventListener('click', () => {
   stopwatchInterval = setInterval(updateStopwatch, 10)
 })
-document.getElementById('ex4-stop').addEventListener('click', () => {
+document.getElementById('ex5-stop').addEventListener('click', () => {
   clearInterval(stopwatchInterval)
 })

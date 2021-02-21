@@ -175,18 +175,6 @@ Moral of the story: `this` **can** be more expressive
 
 ...but mostly it causes confusion. Avoid it when possible.
 
-### Event Debouncing and Throttling
-
-Given an event handler...
-
-* Debounce: group many events into a single execution
-* Throttle: limit executions to X for a time window
-
-~~~ {.javascript insert="../../../src/examples/js/events.js" token="event-limiting"}
-~~~
-
-(Example: `src/examples/js/events.html`)
-
 ### Exercise: Simple User Interaction
 
   #. Open the following files in your text editor:

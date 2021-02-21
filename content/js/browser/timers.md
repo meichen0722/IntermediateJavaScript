@@ -165,6 +165,43 @@ const start = () => {
 const stop = () => clearInterval(intervalID)
 ```
 
+### Limiting events
+
+- Two key words: `throttle` and `debounce`
+- `throttle`: *consistently* respond to a frequent event
+- `debounce`: *eventually* respond to a frequent event
+
+### Limiting events
+
+- Throttle: only respond after X timeout; new events are ignored
+- Debounce: wait X timeout before responding; new events extend timeout
+- Both are implemented using `setTimeout`!
+- Visualization 1 ([link](https://redd.one/blog/debounce-vs-throttle))
+
+### Limiting events
+
+- Both are functions that will *wrap* an event handler
+- The returned function is called "throttled" or "debounced"
+- You give that handler to an event listener.
+
+```javascript
+const throttledHandler = throttle(handleFn, 300)
+
+document.getElementById('button')
+  .addEventListener('click', throttledHandler)
+```
+
+### Limiting events
+
+Example: http://localhost:3000/js/browser/throttling.html
+
+### Limiting events
+
+- Many application can get away with a simple implementation
+- For more advanced applications, use 
+  - lodash.throttle: https://www.npmjs.com/package/lodash.throttle
+  - lodash.debounce: https://www.npmjs.com/package/lodash.debounce
+
 ### Exercise
 
 #. Open http://localhost:3000/js/browser/timers.html

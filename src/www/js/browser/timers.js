@@ -42,6 +42,43 @@
  * Exercise 4
  * ============================================
  *
+ * Give the "Click Me" button two click handlers, one that is throttled and
+ * one that is debounced, both with a 500ms delay. When the event handlers
+ * run, have them update the count of event handler calls for the respective
+ * display. Also increment the button click counter for each click.
+ */
+
+// Use the throttle and debounce functions below
+
+function throttle(func, duration) {
+  let shouldWait = false
+  return function (...args) {
+    if (!shouldWait) {
+      func.apply(this, args)
+      shouldWait = true
+      setTimeout(function () {
+        shouldWait = false
+      }, duration)
+    }
+  }
+}
+
+function debounce(func, duration) {
+  let timeout
+  return function (...args) {
+    const effect = () => {
+      timeout = null
+      return func.apply(this, args)
+    }
+    clearTimeout(timeout)
+    timeout = setTimeout(effect, duration)
+  }
+}
+
+/**
+ * Exercise 5 (Extra Credit)
+ * ============================================
+ *
  * Create a stopwatch display, which displays minutes, seconds, and centiseconds.
  * Something like 01:23.45 is 1 minutes, 23 seconds, 45 centiseconds.
  * The stopwatch begins running when you click "Start" and pauses when you click
