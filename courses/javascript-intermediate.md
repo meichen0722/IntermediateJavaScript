@@ -56,6 +56,10 @@ This JavaScript course is delivered during two days.
 
 <<(../content/js/dom/index.md)
 
+# Browser APIs
+
+<<(../content/js/browser/index.md)
+
 # Functional Programming
 
 <<(../content/js/functional/basics.md)
