@@ -94,8 +94,6 @@ This JavaScript course is delivered during two days.
 
 # Web Application Development
 
-<<(../content/js/apis/websockets/index.md)
-<<(../content/js/apis/webstorage/index.md)
 <<(../content/js/apis/serviceworkers/index.md)
 
 # Developer Tools

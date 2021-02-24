@@ -71,7 +71,7 @@ wss.on('connection', (ws, req) => {
 
 ### Demo
 
-- Visit http://localhost:3000/js/apis/websockets/demo/
+- Visit http://localhost:3000/js/browser/websockets/demo/
 
 ### Authenticating
 
