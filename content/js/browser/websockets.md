@@ -63,7 +63,7 @@ const wss = new WebSocket.Server({ port: 3030 })
 wss.on('connection', (ws, req) => {
   // send message
   ws.send('Welcome!')
-  
+
   // on disconnect
   ws.on('close', () => {})
 })
@@ -73,7 +73,70 @@ wss.on('connection', (ws, req) => {
 
 - Visit http://localhost:3000/js/apis/websockets/demo/
 
+### Authenticating
+
+- You can send query params along with the WS connection:
+
+```javascript
+ws = new WebSocket(`ws://localhost:3030/?user=${user}`)
+```
+
+- You could use an auth key for real security
+- Read the query params on the WS side:
+
+```javascript
+const url = require('url')
+wss.on('connection', (ws, req) => {
+  const user = url.parse(req.url, true).query.user
+  // check if user is valid...
+})
+```
+
+### Communicating with other clients
+
+You can access other connected clients: `wss.clients`
+
+```javascript
+wss.clients.forEach(client => {
+  client.send('Hello')
+})
+```
+
+### Communicating with other clients
+
+WS will error if you try to `send` to a closed client:
+
+```
+Error: WebSocket is not open: readyState 3 (CLOSED)
+```
+
+So check for readiness before sending:
+
+```javascript
+wss.clients.forEach(client => {
+  if (client.readyState === WebSocket.OPEN) {
+    client.send(message)
+  }
+})
+```
+
+### Communicating with other clients
+
+You can also skip yourself when iterating across clients:
+
+```javascript
+const sendToClients = (ws, message) => {
+  wss.clients.forEach(client => {
+    if (client !== ws) {
+      // ...
+    }
+  })
+}
+```
+
 ### Exercise
+
+
 
 
 
