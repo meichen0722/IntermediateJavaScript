@@ -97,7 +97,6 @@ This JavaScript course is delivered during two days.
 <<(../content/js/apis/websockets/index.md)
 <<(../content/js/apis/webstorage/index.md)
 <<(../content/js/apis/serviceworkers/index.md)
-<<(../content/js/apis/webworkers/index.md)
 
 # Developer Tools
 
