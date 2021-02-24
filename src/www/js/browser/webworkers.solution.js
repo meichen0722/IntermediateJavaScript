@@ -31,10 +31,6 @@ worker.addEventListener('message', ({ data }) => {
   document.getElementById('output').innerText = 'Finished!'
 })
 
-const expensiveCalculation = () => {
-  for (let i = 0; i < 5000000000; i++) {}
-}
-
 const updateTime = () => {
   const date = new Date()
   const hours = date.getHours()

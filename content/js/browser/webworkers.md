@@ -79,6 +79,15 @@ postMessage('Billy')
 
 The mutation in the worker *will not affect* the `person` object
 
+### Loading other scripts
+
+- Load other script files in the worker with `importScripts`
+
+```javascript
+importScripts('foo.js')
+importScripts('//example.com/foo.js') // other domain
+```
+
 ### Resources
 
 - MDN ([link](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers))
