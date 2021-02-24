@@ -1,10 +1,10 @@
 $(function() {
-  let log = function(data) {
+  const log = function(data) {
     $("#log").prepend($("<li></li>").text(data));
   };
 
   // <<: new
-  let ws = new WebSocket("ws://localhost:3000/");
+  let ws = new WebSocket("ws://localhost:3030/");
   // :>>
 
   // <<: onopen
