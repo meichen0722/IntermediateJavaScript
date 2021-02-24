@@ -70,7 +70,7 @@ This JavaScript course is delivered during two days.
 
 # FP Intermediate
 
-## Funtional Programming Intermediate
+## Functional Programming Intermediate
 
 <<(../content/js/functional/state.md)
 
@@ -90,7 +90,7 @@ This JavaScript course is delivered during two days.
 <<(../content/js/async/promises.md)
 <<(../content/js/apis/fetch/index.md)
 <<(../content/js/apis/fetch/lab.md)
-<<(../content/js/async/await.md)
+<<(../content/js/async/async-await.md)
 
 # Web Application Development
 

@@ -1,5 +1,5 @@
 ## Browser APIs
 
 <<(./timers.md)
-<<(../apis/webstorage/index.html)
+<<(../apis/webstorage/index.md)
 <<(./webworkers.md)
