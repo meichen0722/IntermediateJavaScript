@@ -2,3 +2,4 @@
 
 <<(./timers.md)
 <<(../apis/webstorage/index.html)
+<<(./webworkers.md)
