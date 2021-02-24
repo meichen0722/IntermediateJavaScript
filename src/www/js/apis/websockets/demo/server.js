@@ -1,25 +1,20 @@
-const url = require('url')
-
 const WebSocket = require('ws')
-
-console.log('hello world')
-
 const wss = new WebSocket.Server({ port: 3030 })
 
-function sendToClients(ws, message) {
-  wss.clients.forEach(client => {
-    if (client !== ws && client.readyState === WebSocket.OPEN) {
-      client.send(message)
-    }
-  })
-}
-
 wss.on('connection', (ws, req) => {
-  const user = url.parse(req.url, true).query.user
+  console.log('Client connected')
 
-  sendToClients(ws, `${user} joined.`)
+  ws.send('Welcome!')
+
+  ws.on('message', (data) => {
+    if (data === 'PING') ws.send('PONG')
+  })
+
+  setTimeout(() => {
+    ws.send('Server-initiated message')
+  }, 2000)
 
   ws.on('close', () => {
-    sendToClients(ws, `${user} disconnected.`)
+    console.log('Client disconnected')
   })
 })
