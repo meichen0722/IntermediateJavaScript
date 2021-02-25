@@ -145,7 +145,7 @@ Day 5
 
 # Functional Programming (Ramda)
 
-<<(../content/js/functional/state.md)
+<<(../content/js/functional/declarative.md)
 
 # JS Language
 
