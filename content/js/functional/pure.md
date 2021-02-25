@@ -1,46 +1,165 @@
-### What is a *Pure* Function? ###
+## Pure Functions
 
-Pure functions are functions that have the same properties as their
-mathematical cousins.  Some of these properties include:
+### Pure Functions
 
-  * Can only access bound variables (i.e., their arguments)
+1. Total
+1. Deterministic
+1. No observable side-effects
 
-  * Cannot have side effects (e.g., update the DOM)
+### Total
 
-  * Given the same inputs, always produces the same output
+- One input, one output
 
-In other words, a pure function always produces a return value and
-that return value can only be calculated using the function's
-arguments.
+\columnsbegin \column{.5\textwidth}
 
-### What's the Point of Pure Functions? ###
+```javascript
+const double = (x) => {
+  if (x === 1) return 2
+  if (x === 2) return 4
+  if (x === 3) return 6
+}
+```
 
-Pure functions make programming *a lot* easier!
+\column{.5\textwidth}
 
-  * Everything you need to know about a function is there in its
-    definition
+```javascript
+const double = (x) => {
+  return x * 2
+}
+```
 
-  * They don't rely on the state of the program, user, or machine
+\columnsend
 
-  * Simple to test (can even be automated)
+### Deterministic
 
-### Writing Pure Functions in JavaScript ###
+Generally, does not refer to data outside the closure
 
-Like everything in JavaScript, you get little help from the language
-when trying to write pure functions.  Here are some tips:
+\columnsbegin \column{.5\textwidth}
 
-  * Don't access global or closure variables
+```javascript
+let sawTwo = false
+const doubleTrouble = (x) => {
+  if (x === 2) sawTwo = true
+  return sawTwo ? x * 4 : x * 2
+}
+```
 
-  * Don't mutate any arguments or call functions that mutate arguments
+\column{.5\textwidth}
 
-  * Don't change the state of the program or runtime
+```javascript
+const doubleTrouble = (x, sawTwo) => {
+  return sawTwo ? x * 4 : x * 2
+}
+```
 
-### Pure Function Quiz: Part 1 ###
+\columnsend
 
-~~~ {.javascript insert="../../../src/examples/js/pure.js" token="cache"}
-~~~
+### No side effects
 
-### Pure Function Quiz: Part 2 ###
+- No network calls, DOM updates, console.logs
 
-~~~ {.javascript insert="../../../src/examples/js/pure.js" token="helper"}
-~~~
+\columnsbegin \column{.5\textwidth}
+
+```javascript
+const addUser = (user, users) => {
+  console.log(`Saving user ${user.name}`)
+  api.saveUser(user)
+  return users.concat(user)
+}
+```
+
+\column{.5\textwidth}
+
+```javascript
+const addUser = (user, users) => {
+  return {
+    state: users.concat(user),
+    log: `Saving user ${user.name}`,
+    network: () => { api.saveUser(user) }
+  }
+}
+```
+
+\columnsend
+
+### No side effects
+
+- No mutation
+
+\columnsbegin \column{.5\textwidth}
+
+```javascript
+const makeDone = (todo) => {
+  todo.done = true
+}
+```
+
+\column{.5\textwidth}
+
+```javascript
+const markDone = (todo) => {
+  return { ...todo, done: true }
+}
+```
+
+\columnsend
+
+### Immutability
+
+- Avoid any **assignment** on a **dot or bracket accessor**
+
+```javascript
+const nums = [1, 2, 3]
+nums[1] = 5 // nope
+
+const obj = { a: 1 }
+obj.a = 2 // nope
+```
+
+### Immutability
+
+- Avoid these `Array` methods without copying first:
+  - `push` / `pop`
+  - `shift` / `unshift`
+  - `splice`
+  - `sort`    
+  - `reverse`
+- Avoid these `Object` methods without copying first:
+  - `assign`
+
+### Purity Tests
+
+```javascript
+const haveBirthday = (user) => {
+  user.age += 1
+  return user
+}
+```
+
+### Purity Tests
+
+```javascript
+const isOnline = (id) => {
+  return api.get('/users/${id}')
+    .then(({ data }) => {
+      return data.status === 'online'
+    })
+}
+```
+
+### Purity Tests
+
+```javascript
+const selectorText = (selector) => {
+  return document
+    .querySelector(selector)
+    .innerText
+}
+```
+    
+### What's the point
+
+- Easy to test
+- Easy to reason about
+- No hidden state
+- Functional core, imperative shell

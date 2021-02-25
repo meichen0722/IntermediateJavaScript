@@ -72,6 +72,7 @@ This JavaScript course is delivered during two days.
 
 ## Functional Programming Intermediate
 
+<<(../content/js/functional/pure.md)
 <<(../content/js/functional/declarative.md)
 
 # Object-Oriented Programming
