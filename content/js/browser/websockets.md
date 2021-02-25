@@ -136,8 +136,6 @@ const sendToClients = (ws, message) => {
 
 ### Exercise
 
+#. Go to http://localhost:3000, Browser APIs > WebSockets ([link](http://localhost:3000/js/browser/websockets/exercise/index.html))
 
-
-
-
-
+#. Open file src/www/js/browser/websockets/exercise/main.js and server.js
