@@ -142,3 +142,9 @@ const doStuff = (str) => {
 ~~~
 
 \columnsend
+
+### Exercise
+
+#. Open `src/www/js/functional/composition.test.js`
+
+#. Make / keep all tests passing

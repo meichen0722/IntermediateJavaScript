@@ -49,10 +49,18 @@ add(1, 2, 3) // 6
 
 ### Currying
 
+- A very simple implementation, only handles 2 args:
+
+```javascript
+const curry = f => x => y => f(x, y)
+```
+
+### Currying
+
 - This way you can create specialized functions
 
 ```javascript
-const modulo = (x, y) => y % x
+const modulo = curry((x, y) => y % x)
 const isOdd = modulo(2)
 isOdd(3) // 1, truthy
 isOdd(2) // 0, falsey
@@ -95,3 +103,9 @@ add(1) // 6
 add(1, 3) // 4
 add(1)(3) // Error: not a function
 ```
+
+### Exercise
+
+#. Open `src/www/js/functional/currying.test.js`
+
+#. Follow prompts
