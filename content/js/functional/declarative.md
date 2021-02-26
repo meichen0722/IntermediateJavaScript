@@ -1,3 +1,5 @@
+## Declarative Programming
+
 ### Tell me What not How
 
 - "Imperative" style focuses on **how**

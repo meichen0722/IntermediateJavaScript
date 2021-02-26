@@ -74,6 +74,8 @@ This JavaScript course is delivered during two days.
 
 <<(../content/js/functional/pure.md)
 <<(../content/js/functional/declarative.md)
+<<(../content/js/functional/currying.md)
+
 
 # Object-Oriented Programming
 
