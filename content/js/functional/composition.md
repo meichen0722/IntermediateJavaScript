@@ -69,6 +69,19 @@ const longerWords = R.filter(compose(lt(3), length))
 longerWords(['foo', 'bar', 'waffles']) // ['waffles']
 ```
 
+### Flip
+
+- When the arguments are not in the order you want them, `flip` them!
+
+```javascript
+const echo = R.compose(R.join(', '), R.repeat)
+echo('Hello', 3) // "Hello, Hello, Hello"
+
+const flippedEcho = R.flip(echo)
+const echo3Times = flippedEcho(3)
+echo3Times('Hello') // "Hello, Hello, Hello"
+```
+
 ### Pipe
 
 - Like `compose` but rights left-to-right

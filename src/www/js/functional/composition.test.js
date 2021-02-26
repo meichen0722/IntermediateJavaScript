@@ -1,11 +1,10 @@
 import * as R from 'ramda'
 
-
 // Setup data
 const users = [
   { id: 1, name: 'Andrew', age: 34, registered: true },
   { id: 2, name: 'Billy', age: 27, registered: false },
-  { id: 3, name: 'Charles', age: 16, registered: false },
+  { id: 3, name: 'Cynthia', age: 16, registered: false },
   { id: 4, name: 'David', age: 58, registered: true },
 ]
 
