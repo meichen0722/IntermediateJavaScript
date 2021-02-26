@@ -77,6 +77,7 @@ This JavaScript course is delivered during two days.
 <<(../content/js/functional/currying.md)
 <<(../content/js/functional/ramda.md)
 <<(../content/js/functional/composition.md)
+<<(../content/js/functional/point-free.md)
 
 # Object-Oriented Programming
 

@@ -42,3 +42,14 @@ import { map, prop } from 'ramda'
 
 map(prop('name'))
 ```
+
+### Comparison with Lodash
+
+- Similar, but putting the data at the end
+
+```javascript
+R.map(R.double, [1, 2, 3])
+_.map(_.double, [1, 2, 3])
+```
+
+- Lodash does not auto-curry
