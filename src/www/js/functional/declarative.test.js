@@ -1,7 +1,7 @@
 import { pipe } from 'ramda'
 
 describe('Declarative', () => {
-  it('Rewrite from imperative to declarative, using pipe', () => {
+  it('Rewrite from imperative to declarative', () => {
     const animals = ['bird', 'orangutan', 'monkey', 'cat', 'lionfish']
 
     const result = []
@@ -31,26 +31,5 @@ describe('Declarative', () => {
     }
 
     expect(result4).toEqual('monkey! < lionfish! < orangutan!')
-  })
-
-  it('rewrite the declarative function using named functions and pipe', () => {
-    const nums = [1, 2, 3, 4, 5]
-
-    let result1 = 0
-    for (let i = 0; i < nums.length; i++) {
-      result1 += nums[i]
-    }
-
-    const result2 = []
-    for (let i = 0; i < nums.length; i++) {
-      result2.push(nums[i] + result1)
-    }
-
-    const result3 = []
-    for (let i = 0; i < result2.length; i++) {
-      result3.push(result2[i] * 2)
-    }
-
-    expect(result3).toEqual([32, 34, 36, 38, 40])
   })
 })
