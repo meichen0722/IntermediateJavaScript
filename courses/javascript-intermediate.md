@@ -110,6 +110,11 @@ This JavaScript course is delivered during two days.
 <<(../content/js/alternatives/typescript/basics.md)
 <<(../content/js/alternatives/typescript/more.md)
 
+# Debugging
+
+<<(../content/js/debugging/console.md)
+
+
 # Testing
 
 <<(../content/js/testing.md)
