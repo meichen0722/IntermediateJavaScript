@@ -52,6 +52,12 @@ This also works with failed `console.assert`ions!
 
 Install Debugger for Chrome
 
+1. Open command palette (Cmd+P / Ctrl+P)
+1. Choose "Extensions: Install Extensions"
+1. Search for "Debugger for Chrome" and install
+
+![](./images/vscode-setup0.jpg)
+
 ### VS Code Debugger
 
 Set up Chrome debugger configuration
@@ -101,6 +107,12 @@ Provide the URL of your app
 ### Webstorm Debugger
 
 ![](./images/webstorm-setup4.jpg)
+
+### Resources
+
+Google Chrome DevTools is constantly under development.
+
+Keep an eye on their Web Updates ([link](https://developers.google.com/web/updates/2021)).
 
 ### Exercise
 

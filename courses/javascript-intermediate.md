@@ -113,7 +113,7 @@ This JavaScript course is delivered during two days.
 # Debugging
 
 <<(../content/js/debugging/console.md)
-
+<<(../content/js/debugging/debugger.md)
 
 # Testing
 
