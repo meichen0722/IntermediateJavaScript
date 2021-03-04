@@ -6,3 +6,5 @@ src/www/js/alternatives/typescript/**/*.js
 /src/babel-out/
 /slides/*.pdf
 .vscode
+src/data/uploads/*
+!src/data/uploads/.gitkeep
