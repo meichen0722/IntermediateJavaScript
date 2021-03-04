@@ -84,6 +84,10 @@ We'll use **launch** because starting up Chrome with debugger is tedious.
 
 ![](./images/vscode-setup2.jpg)
 
+### Resources
+
+- Tutorial ([link](https://www.digitalocean.com/community/tutorials/how-to-debug-javascript-with-google-chrome-devtools-and-visual-studio-code))
+
 ### Demo
 
 ### Webstorm Debugger
@@ -107,6 +111,10 @@ Provide the URL of your app
 ### Webstorm Debugger
 
 ![](./images/webstorm-setup4.jpg)
+
+### Webstorm Debugger
+
+- Tutorial ([link](https://www.jetbrains.com/help/webstorm/debugging-javascript-in-chrome.html#debugging_js_on_built_in_server_example))
 
 ### Resources
 

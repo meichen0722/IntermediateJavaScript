@@ -1,3 +1,11 @@
+
+# javascript intermediate
+
+- [ ] read about constraint validation: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation
+- [ ] read through client side validation, add styling: https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
+
+# stuff
+
 - [x] clean up webpack setup
 - [x] Can I get rid of the title slide?
 - [ ] adding emoji

@@ -49,7 +49,7 @@ Convert to an `Array` with `Array.from()` or `[...nodeList]`
 ```javascript
 const alerts = document.getElementsByClassName('alert')
 
-const values1 = Array.form(alerts).map(/* */) // OK
+const values1 = Array.from(alerts).map(/* */) // OK
 const values2 = [...alerts].map(/* */) // OK
 ```
 

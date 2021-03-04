@@ -93,9 +93,12 @@ This JavaScript course is delivered during two days.
 
 <<(../content/js/async/runtime.md)
 <<(../content/js/async/promises.md)
-<<(../content/js/apis/fetch/index.md)
-<<(../content/js/apis/fetch/lab.md)
+<<(../content/js/async/axios.md)
 <<(../content/js/async/async-await.md)
+
+# Forms
+
+<<(../content/js/forms/basics.md)
 
 # Web Application Development
 
