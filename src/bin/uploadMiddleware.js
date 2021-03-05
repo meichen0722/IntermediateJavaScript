@@ -13,6 +13,7 @@ const storage = multer.diskStorage({
 })
 // const upload = multer({ storage: storage }).single('file')
 const upload = multer({ storage: storage }).array('files', 5)
+const fieldsOnly = multer().none()
 
 module.exports = (req, res, next) => {
   // handle uploads
@@ -32,6 +33,9 @@ module.exports = (req, res, next) => {
   } else if (req.url.startsWith('/uploads/')) {
     res.sendFile(path.join(__dirname, '../data/uploads', path.basename(req.url)))
   } else {
-    next()
+    // pass through multipart/form-data parsing
+    fieldsOnly(req, res, function(err) {
+      next()
+    })
   }
 }
