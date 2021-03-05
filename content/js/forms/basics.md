@@ -104,7 +104,12 @@ Will POST to `/users` with form data
 
 Default is for page to show server response of POST
 
+\columnsbegin \column{.5\textwidth}
+
 ![](./images/server-response.jpg)
+
+\column{.5\textwidth}
+\columnsend
 
 ### Validations
 
@@ -115,14 +120,20 @@ Can add `required="required"` to most input elements
 
 <select required="required">...</select>
 
-<input type="radio" name="foo" value="foo" required="required">
+<input type="radio" name="foo" value="foo" 
+       required="required">
 ```
 
 ### Validations
 
 Can add `minlength="..."` or `maxlength="..."` to enforce length restrictions
 
+\columnsbegin \column{.5\textwidth}
+
 ![](./images/validate-length.jpg)
+
+\column{.5\textwidth}
+\columnsend
 
 ### Validations
 
@@ -135,11 +146,18 @@ Include `title` to explain the pattern matching.
        title="Enter digits in the format ###-###-####">
 ```
 
+\columnsbegin \column{.5\textwidth}
+
 ![](./images/validate-pattern.jpg)
+
+\column{.5\textwidth}
+\columnsend
 
 ### Exercise
 
-
+1. Run `$ yarn db` or `$ npm run db` from `src` directory
+1. Go to http://localhost:3000/js/forms/basic.html
+1. Open `src/www/js/forms/basic.html` and follow prompts
 
 ### Submitting Forms AJAX
 
