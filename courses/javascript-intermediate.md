@@ -99,6 +99,7 @@ This JavaScript course is delivered during two days.
 # Forms
 
 <<(../content/js/forms/basics.md)
+<<(../content/js/forms/ajax.md)
 <<(../content/js/forms/uploads.md)
 
 # Web Application Development

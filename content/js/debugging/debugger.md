@@ -118,9 +118,8 @@ Provide the URL of your app
 
 ### Resources
 
-Google Chrome DevTools is constantly under development.
-
-Keep an eye on their Web Updates ([link](https://developers.google.com/web/updates/2021)).
+- Google Chrome DevTools ([link](https://developers.google.com/web/updates/2021)).
+- console tricks ([link](https://css-tricks.com/a-guide-to-console-commands/))
 
 ### Exercise
 
