@@ -1,11 +1,12 @@
 # WebDev: Web Development Course
 
-This is the source code and training content for the Web
-Development course taught by [Andrew Smith](https://github.com/andrewsouthpaw/).
+This is the source code and training content for Web Development courses taught by [Andrew Smith](https://github.com/andrewsouthpaw/).
 
 ## Before you begin
 
-Start by forking and cloning the repo. Once you've cloned the repo, set this repo as the `upstream`
+Start by forking and cloning the repo. If you don't clone the repo, then you won't be able to save your work on exercises to your own cloned repo. Choose to not fork at your own risk.
+
+Once you've cloned the repo, set this repo as the `upstream`
 
 ```
 $ git remote add upstream https://github.com/AndrewSouthpaw/webdev.git
@@ -32,25 +33,27 @@ We're going to walk through installation of the following:
 - Node.js
 - yarn
 
+If you already have these installed, then skip ahead.
+
 ### `nvm`
 
 **This is for macOS and Linux only. Windows users can just go to nodejs.org and install there.**
 
-You can install a single version of Node.js, but the more common practice is to install `nvm` (Node Version Manager), which allows you manage multiple versions of node on the same system.
+You can install a single version of Node.js, but the more common practice is to install [`nvm` (Node Version Manager)](https://github.com/nvm-sh/nvm), which allows you manage multiple versions of node on the same system.
 
 ```
-$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 ```
 
 Running this command downloads and runs the script in your shell.
 
 Note the output: `nvm` will automatically update one of your profile files in your home directory (`~/.bash_profile`, `~/.zshrc`, `~/.profile`, or `~/.bashrc`, it tries to make a reasonable guess).
  
-Open a fresh shell and verify you can access `nvm` now:
+**Open a fresh shell** and verify you can access `nvm` now:
 
 ```shell
 $ nvm --version
-0.35.1
+0.37.2
 
 $ echo $NVM_DIR
 /some/path/to/.nvm
@@ -146,27 +149,3 @@ Other exercises will have you work with a Jest spec file and maybe an implementa
 There's a JS sandbox under `/sandbox`, with a skeleton JS starter project. Go into that directory and follow the `README.md` to get it running.
 
 For React, use `/sandbox_react` which has some additional libraries and setup.
-
-## Development (students can ignore) 
-
-### Building the Course Content (PDF Files)
-
-1. Start with Linux, as macOS has incompatibility issues
-
-1. Install the [Nix Package Manager](https://nixos.org/nix/)
-
-1. Load into your shell: `  . /home/andrew/.nix-profile/etc/profile.d/nix.sh`
-
-1. Open `nix-shell`
-
-1. Run `edify_datadir=. edify build courses/javascript-intermediate.md`
-
-The generated PDF files will be in the `build/courses` directory.
-
-Helpful commands for transferring data to and fro for VM:
-
-```
-$ rsync -auv --exclude 'src/node_modules' --exclude 'sandbox/node_modules' ~/Projects/webdev webdev:/home/andrew/Projects
-$ scp webdev:/home/andrew/Projects/webdev/build/courses/javascript-intermediate.slides.pdf slides
-$ open slides/javascript-intermediate.slides.pdf
-```
