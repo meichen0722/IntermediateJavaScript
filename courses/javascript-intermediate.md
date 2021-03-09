@@ -123,3 +123,8 @@ This JavaScript course is delivered during two days.
 # Testing
 
 <<(../content/js/testing.md)
+
+# Intro to Web Security
+
+<<(../content/js/security/xss.md)
+
