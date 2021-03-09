@@ -24,7 +24,7 @@
 document.querySelector('form').addEventListener('submit', async (e) => {
   e.preventDefault()
   const data = new FormData(e.target)
-  const { data: res } = await axios.post('http://localhost:4000/issues', data)
+  const { data: res } = await axios.post('/api/issues', data)
   console.log('data', res)
 })
 
@@ -87,6 +87,6 @@ document.querySelector('form').addEventListener('submit', async (e) => {
 //     }
 //   }, {})
 //
-//   const { data: res } = await axios.post('http://localhost:4000/issues', values)
+//   const { data: res } = await axios.post('/api/issues', values)
 //   console.log('data', res)
 // })

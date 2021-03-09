@@ -166,6 +166,6 @@ Include `title` to explain the pattern matching.
 
 ### Exercise
 
-1. Run `$ yarn db` or `$ npm run db` from `src` directory
+1. Run `$ yarn start` or `$ npm start` from `src` directory
 1. Go to http://localhost:3000/js/forms/basic.html
 1. Open `src/www/js/forms/basic.html` and follow prompts

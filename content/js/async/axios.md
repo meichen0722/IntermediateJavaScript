@@ -43,7 +43,7 @@ Links to dive deeper:
 **GET** goes to collection OR member
 
 ```
-$ curl -X GET http://localhost:4000/todos
+$ curl -X GET http://localhost:3000/api/todos
 
 [
   { "id": 1, "text": "Learn JS", "done": false },
@@ -51,7 +51,7 @@ $ curl -X GET http://localhost:4000/todos
   ...
 ]
 
-$ curl -X GET http://localhost:4000/todos/1
+$ curl -X GET http://localhost:3000/api/todos/1
 
 { "id": 1, "text": "Learn JS", "done": false }
 ```
@@ -63,7 +63,7 @@ $ curl -X GET http://localhost:4000/todos/1
 ```
 $ curl -d '{ "text": "Practice REST", "done": false }' \
   -H "Content-Type: application/json" \
-  -X POST http://localhost:4000/todos
+  -X POST http://localhost:3000/api/todos
 ```
 
 Returns the newly created member:
@@ -83,7 +83,7 @@ Returns the newly created member:
 ```
 $ curl -d '{ "text": "Practice REST", "done": true }' \
    -H "Content-Type: application/json" \
-   -X PUT http://localhost:4000/todos/4
+   -X PUT http://localhost:3000/api/todos/4
 ```
 
 Returns the newly updated member:
@@ -101,7 +101,7 @@ Returns the newly updated member:
 **DELETE** goes to member
 
 ```
-$ curl -X DELETE http://localhost:4000/todos/4
+$ curl -X DELETE http://localhost:3000/api/todos/4
 
 {}
 ```
@@ -244,7 +244,7 @@ import axios from 'axios'
 // create the instance
 const api = axios.create({ 
   // specify a base URL other than current domain
-  baseURL: 'http://localhost:4000' 
+  baseURL: 'http://localhost:3000/api' 
 })
 
 // adding auth
@@ -270,11 +270,11 @@ Docs: [(link)](https://github.com/axios/axios)
 
 ### Exercise
 
-Turn on your local DB server:
+Turn on your local server:
 
 ```
 $ cd src
-$ yarn db
+$ yarn start
 ```
 
 1. Practice GET, POST, PUT, DELETE using Postman

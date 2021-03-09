@@ -27,9 +27,8 @@
   },
   "scripts": {
     "chat": "node bin/chat-server.js",
-    "start": "node bin/server.js",
-    "test": "jest",
-    "db": "json-server --middlewares ./bin/uploadMiddleware.js --watch data/db.json -p 4000"
+    "start": "json-server --middlewares ./bin/uploadMiddleware.js ./bin/csp.js ./bin/fileServer.js --routes ./bin/routes.json --watch data/db.json -p 3000",
+    "test": "jest"
   },
   "jest": {
     "testRegex": "(.*.test.jsx?$|/__tests__/.*\\.jsx?$)"

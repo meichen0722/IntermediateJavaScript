@@ -2,12 +2,12 @@
  * Exercise 1
  * ============================================
  *
- * Make sure your DB server is on, by running `$ yarn db` or `$ npm run db` from the src directory.
+ * Make sure your server is running: `$ yarn start` or `$ npm start
  *
- * 1. Set up a form that POSTs to http://localhost:4000/uploads.
+ * 1. Set up a form that POSTs to /api/uploads.
  * 2. Add a <input type="file"> with a field name of "files" to the form.
  * 3. Try uploading a file! You will get a message with the uploaded file name. You can
- *    copy the filename and load it in the browser: http://localhost:4000/uploads/myfilename.jpg
+ *    copy the filename and load it in the browser: http://localhost:3000/api/uploads/myfilename.jpg
  *    It will be stored in `src/data/uploads`.
  *
  * If you're getting an error while uploading the file and your DB server is giving this
@@ -68,13 +68,13 @@ document.querySelector('#ex2-form').addEventListener('submit', async (e) => {
       progressBar.setAttribute('aria-valuenow', percentCompleted)
     },
   }
-  const { data: res } = await axios.post('http://localhost:4000/uploads', data, config)
+  const { data: res } = await axios.post('/api/uploads', data, config)
   submitBtn.removeAttribute('disabled')
   e.target.querySelector('input').value = null
   globalFile = null
   const resultNode = document.createElement('a')
   const fileName = res.match(/Files uploaded: (.*)/)[1]
-  const url = `http://localhost:4000/uploads/${fileName}`
+  const url = `/api/uploads/${fileName}`
   resultNode.href = url
   resultNode.innerText = 'File uploaded'
   e.target.appendChild(resultNode)
@@ -106,7 +106,7 @@ document.querySelector('#ex2-file').addEventListener('change', (e) => {
  *
  *        "Files uploaded: foo.jpg"
  *
- *    You can then locate the file at http://localhost:4000/foo.jpg
+ *    You can then locate the file at http://localhost:3000/api/uploads/foo.jpg
  *
  *    Hint: use regex and capture groups to grab the filename:
  *    https://javascript.info/regexp-groups#parentheses-contents-in-the-match
@@ -134,7 +134,7 @@ const snippetForExercise3 = () => {
     },
   }
 
-  axios.post('http://localhost:4000/uploads', data, config)
+  axios.post('/api/uploads', data, config)
   // /\--- stuff to copy
 }
 

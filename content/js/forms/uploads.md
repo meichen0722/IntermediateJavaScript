@@ -123,5 +123,5 @@ const data = new FormData()
 
 1. Visit http://localhost:3000/js/forms/upload.html
 1. Open `src/www/forms/uploads.html` and `src/www/forms/uploads.js`.
-1. Run your DB server from `src` directory: 
-   1. `$ yarn db` or `$ npm run db`
+1. Run your server from `src` directory: 
+   1. `$ yarn start` or `$ npm start`

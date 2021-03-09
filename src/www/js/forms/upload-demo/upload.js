@@ -5,7 +5,7 @@ document.querySelector('form').addEventListener('submit', (e) => {
   e.preventDefault()
   const data = new FormData()
   globalFiles.forEach(file => data.append('files', file))
-  axios.post('http://localhost:4000/uploads', data, { headers: { 'content-type': 'multipart/form-data' } })
+  axios.post('/api/uploads', data, { headers: { 'content-type': 'multipart/form-data' } })
 })
 
 document.querySelector('input').addEventListener('change', (e) => {
