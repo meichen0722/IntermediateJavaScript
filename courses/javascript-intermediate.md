@@ -31,7 +31,7 @@ This JavaScript course is delivered over three days.
 ### What's In Store - Day 1
 
 1. JavaScript Language
-1. Functional Programming part 1
+1. Functional Programming - Part 1
 1. Document Object Model
 1. Browser APIs
 1. Asynchronous Programming
@@ -41,7 +41,7 @@ This JavaScript course is delivered over three days.
 1. Forms
 1. Object Oriented Programming (Classical)
 1. Object Oriented Programming (Prototypal)
-1. Functional Programming part 2
+1. Functional Programming - Part 2
 1. Managing UI
 
 ### What's In Store - Day 3

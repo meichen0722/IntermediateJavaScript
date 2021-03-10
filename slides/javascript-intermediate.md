@@ -1,3 +1,3 @@
 # JavaScript Intermediate Slides
 
-<https://drive.google.com/open?id=1VkB_RZSUoIMpHbJsnVCB8fP7nRZkL68z>
+<https://drive.google.com/file/d/1d4w6FhaSeKG-gV1W_EchgRt9QPzVaP4w/view?usp=sharing>
