@@ -1,11 +1,14 @@
 describe('this', () => {
   it('EXERCISE 1: should give an age and an function #isAdult which checks if age is >= 18', () => {
-    const person = {}
+    const person = {
+      age: 18,
+      isAdult() {} // TODO
+    }
 
     expect(person.isAdult()).toEqual(false)
   })
 
-  it('EXERCISE 2: fix this code', () => {
+  it('EXERCISE 2: fix getColor so it uses contextual scope', () => {
     const c = {
       color: 'green',
       getColor: () => {
@@ -16,7 +19,7 @@ describe('this', () => {
     expect(c.getColor()).toEqual('green')
   })
 
-  it('EXERCISE 3: fix this code', () => {
+  it('EXERCISE 3: fix otherFn so it retains original scope', () => {
     const greeter = {
       message: 'Hello',
       print() {
@@ -31,7 +34,7 @@ describe('this', () => {
     greeter.print()
   })
 
-  it('EXERCISE 4: fix this code', () => {
+  it('EXERCISE 4: fix getColorFn to retain scope using Function#bind', () => {
     const a = {
       color: 'red',
       getColor() {
@@ -39,9 +42,9 @@ describe('this', () => {
       }
     }
 
-    const getColor = a.getColor
+    const getColorFn = a.getColor
 
-    expect(getColor()).toEqual('red')
+    expect(getColorFn()).toEqual('red')
   })
 
   it('EXERCISE 5: fix this code', () => {
