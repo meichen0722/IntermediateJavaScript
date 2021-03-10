@@ -1,6 +1,6 @@
 ### JavaScript Runtime
 
-TODO
+![](../../../diagrams/js/runtime.png)
 
 ### Visualizing the Runtime
 

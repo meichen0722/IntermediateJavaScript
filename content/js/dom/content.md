@@ -29,6 +29,20 @@
 ~~~ {.javascript insert="../../../src/examples/js/dom.js" token="form-value"}
 ~~~
 
+### Form Values
+
+`inputElement.checked`:
+
+  : Gets/sets form input checkbox/radio
+
+```javascript
+const checkbox = document.createElement('input')
+checkbox.type = 'checkbox'
+checkbox.checked = true
+console.log(checkbox.checked) // true
+document.body.appendChild(checkbox)
+```
+
 ### Attributes
 
 Elements can have attributes that specify behavior or store information.

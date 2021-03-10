@@ -34,31 +34,22 @@ const double = (x) => {
 
 Generally, does not refer to data outside the closure
 
-\columnsbegin \column{.5\textwidth}
-
 ```javascript
 let sawTwo = false
 const doubleTrouble = (x) => {
   if (x === 2) sawTwo = true
   return sawTwo ? x * 4 : x * 2
 }
-```
 
-\column{.5\textwidth}
-
-```javascript
+// vs...
 const doubleTrouble = (x, sawTwo) => {
   return sawTwo ? x * 4 : x * 2
 }
 ```
 
-\columnsend
-
 ### No side effects
 
 - No network calls, DOM updates, console.logs
-
-\columnsbegin \column{.5\textwidth}
 
 ```javascript
 const addUser = (user, users) => {
@@ -66,11 +57,8 @@ const addUser = (user, users) => {
   api.saveUser(user)
   return users.concat(user)
 }
-```
 
-\column{.5\textwidth}
-
-```javascript
+// vs...
 const addUser = (user, users) => {
   return {
     state: users.concat(user),
@@ -80,29 +68,20 @@ const addUser = (user, users) => {
 }
 ```
 
-\columnsend
-
 ### No side effects
 
 - No mutation
-
-\columnsbegin \column{.5\textwidth}
 
 ```javascript
 const makeDone = (todo) => {
   todo.done = true
 }
-```
 
-\column{.5\textwidth}
-
-```javascript
+// vs...
 const markDone = (todo) => {
   return { ...todo, done: true }
 }
 ```
-
-\columnsend
 
 ### Immutability
 

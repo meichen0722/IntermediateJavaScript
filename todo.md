@@ -3,6 +3,8 @@
 
 - [ ] read about constraint validation: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation
 - [ ] read through client side validation, add styling: https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
+- [ ] get rid of mockapie
+- [ ] promises exercise
 
 # stuff
 
