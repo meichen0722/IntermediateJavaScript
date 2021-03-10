@@ -5,7 +5,7 @@
   
   #. Follow directions in the `it` statements
   
-  #. All tests should keep passing 
+  #. Go through each test and follow instructions 
 
 ```shell
 $ cd src

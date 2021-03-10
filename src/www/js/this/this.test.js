@@ -11,7 +11,7 @@ describe('this', () => {
   it('EXERCISE 2: fix getColor so it uses contextual scope', () => {
     const c = {
       color: 'green',
-      getColor: () => {
+      getColor: () => { // TODO
         return this.color
       }
     }
@@ -23,7 +23,7 @@ describe('this', () => {
     const greeter = {
       message: 'Hello',
       print() {
-        function otherFn() {
+        function otherFn() { // TODO
           expect(this.message).toEqual('Hello')
         }
 
@@ -42,12 +42,12 @@ describe('this', () => {
       }
     }
 
-    const getColorFn = a.getColor
+    const getColorFn = a.getColor // TODO
 
     expect(getColorFn()).toEqual('red')
   })
 
-  it('EXERCISE 5: fix this code', () => {
+  it('EXTRA CREDIT: fix this code', () => {
     const getAge = () => this.age
 
     const p1 = {
