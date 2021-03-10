@@ -3,6 +3,7 @@
 
 - [ ] read about constraint validation: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation
 - [ ] read through client side validation, add styling: https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
+- [ ] building form values parser: https://www.learnwithjason.dev/blog/get-form-values-as-json#a-full-example-of-multiple-input-types-with-the-formdata-api
 - [ ] get rid of mockapie
 - [ ] promises exercise
 
@@ -36,17 +37,3 @@
 Idea for FP intro:
 
 - in OOP, everything is an is-a relationship. But in web there's ... so many things! How could we model them all?
-
-
-Closure example:
-
-```
-var scope = "I am global";
-function whatismyscope(){
-   var scope = "I am just a local";
-   function func() {return scope;}
-   return func;
-}
-
-whatismyscope()()
-```
