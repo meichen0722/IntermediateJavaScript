@@ -27,7 +27,7 @@
   },
   "scripts": {
     "chat": "node bin/chat-server.js",
-    "start": "json-server --middlewares ./bin/uploadMiddleware.js ./bin/csp.js ./bin/fileServer.js --routes ./bin/routes.json --watch data/db.json -p 3000",
+    "start": "json-server --middlewares ./bin/uploadMiddleware.js ./bin/fileServer.js --routes ./bin/routes.json --watch data/db.json -p 3000",
     "test": "jest"
   },
   "jest": {
