@@ -27,26 +27,8 @@ Question: What does the `example2` function return?
 ~~~ {.javascript insert="../../../src/examples/js/async-await.js" token="getArtistP"}
 ~~~
 
-### Exercise: Using `async` and `await`
+### Exercise
 
-  #. Start your server
-  
-    * cd src
-    * yarn start
-
-  #. Open a browser and check out the API
-  
-    * http://localhost:3000/api/artists
-    * http://localhost:3000/api/artists/2
-    * http://localhost:3000/api/albums
-  
-  #. Open `src/www/js/ajax/ajax.js`
-  
-  #. Open `src/www/js/ajax/ajax.test.js`
-
-  #. Make all tests pass
-
-```shell
-$ cd src
-$ yarn jest ajax.test.js --watch
-```
+1. Go to http://localhost:3000/js/async/promises.html
+1. Open src/www/js/async/promises.js
+1. Follow prompts
