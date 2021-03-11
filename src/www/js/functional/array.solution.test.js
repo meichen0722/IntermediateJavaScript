@@ -10,7 +10,7 @@ describe('Array higher-order functions', () => {
       const mockFn = jest.fn()
 
       // element, index, array
-      users.forEach(mockFn)
+      users.forEach(user => mockFn(user))
 
       expect(mockFn.mock.calls.length).toEqual(3)
       expect(mockFn.mock.calls).toEqual([

@@ -9,6 +9,8 @@ describe('Array higher-order functions', () => {
     it('rewrite the for loop with forEach', () => {
       const mockFn = jest.fn()
 
+      // TODO rewrite with #forEach
+      // Remember: forEach provides three args: element, index, array
       for (let i = 0; i < users.length; i++) {
         mockFn(users[i])
       }

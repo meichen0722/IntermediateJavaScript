@@ -1,7 +1,7 @@
 describe('this', () => {
   it('EXERCISE 1: should give an age and an function #isAdult which checks if age is >= 18', () => {
     const person = {
-      age: 18,
+      age: 17,
       isAdult() {} // TODO
     }
 
