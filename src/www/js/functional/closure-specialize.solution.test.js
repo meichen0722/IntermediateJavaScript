@@ -1,7 +1,10 @@
 describe('Closures: Specializing Behavior', () => {
   // general
-  const prop = () => { throw new Error('Implement me') }
-  const groupBy = () => { throw new Error('Implement me') }
+  const prop = (key) => obj => obj[key]
+  const groupBy = (keyExtractor) => (xs) => xs.reduce((acc, x) => {
+    const key = keyExtractor(x)
+    return { ...acc, [key]: (acc[key] || []).concat(x) }
+  }, {})
 
   // specialized
   const getId = prop('id')
@@ -23,9 +26,9 @@ describe('Closures: Specializing Behavior', () => {
 
   it('rewrite these anonymous functions as a single generalized function', () => {
     // HINT should look something like:
-    // setSize12 = setFontSize(12)
-    const setSize12 = () => { document.body.style.fontSize = '12px' }
-    const setSize14 = () => { document.body.style.fontSize = '14px' }
+    const setFontSize = size => () => { document.body.style.fontSize = `${size}px` }
+    const setSize12 = setFontSize(12)
+    const setSize14 = setFontSize(14)
 
     setSize12()
     expect(document.body.style.fontSize).toEqual('12px')
@@ -46,7 +49,11 @@ describe('Closures: Specializing Behavior', () => {
     //   2. returns a function that expects an ID, and should:
     //       a. Find the user in the collection, and mark them as registered
     //       b. Throw an error "User XX not found" if the ID didn't match a user
-    const createRegistration = () => {}
+    const createRegistration = (usersById) => (id) => {
+      const user = usersById[id]
+      if (!user) throw new Error(`User ${id} not found`)
+      user.registered = true
+    }
 
     // scaffolding... do not edit
     const register = createRegistration(usersById)
