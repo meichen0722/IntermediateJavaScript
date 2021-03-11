@@ -9,7 +9,7 @@
 // code
 
 /**
- * Exercise 2
+ * Exercise 2 (CHALLENGE MODE)
  * ============================================
  *
  * Add a click listener to the "Place Order" button. When clicked, it should
@@ -32,6 +32,14 @@
  * Extra hint: look under the "Methods" section on the left sidebar of the docs to figure
  * out what methods you might want to use.
  *
+ * Extra extra hint: You'll use
+ *
+ * - date.getHours()
+ * - date.getMinutes()
+ * - date.getSeconds()
+ *
+ * to get the hours, minutes, and seconds. See the solution for more guidance.
+ *
  * BONUS CHALLENGE: Now display it in hh:MM AM/PM format, e.g. 4:15 PM. Toggle the
  * time separator (the colon :) on or off each second to mark the passage of seconds.
  */
@@ -39,7 +47,7 @@
 // code
 
 /**
- * Exercise 4
+ * Exercise 4 (EXTRA CREDIT)
  * ============================================
  *
  * Give the "Click Me" button two click handlers, one that is throttled and
