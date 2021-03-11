@@ -7,6 +7,14 @@
  */
 
 // code
+let clicks = 0
+document.getElementById('ex1-button').addEventListener('click', () => {
+  setTimeout(() => {
+    clicks++
+    document.getElementById('ex1-count').innerText = clicks
+  }, 2000)
+})
+
 
 /**
  * Exercise 2
@@ -37,6 +45,16 @@
  */
 
 // code
+const displayTime = () => {
+  const date = new Date()
+  const hours = date.getHours()
+  const minutes = date.getMinutes()
+  const seconds = date.getSeconds()
+  document.getElementById('ex3-display').innerText = `${hours}:${minutes}:${seconds}`
+}
+
+setInterval(displayTime, 1000)
+
 
 /**
  * Exercise 4

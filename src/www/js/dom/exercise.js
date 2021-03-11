@@ -12,6 +12,12 @@
  */
 
 // your code goes here
+const box1 = document.getElementsByClassName('box')[0]
+box1.appendChild(document.createTextNode('Box 1'))
+const box2 = document.getElementById('box2')
+box2.appendChild(document.createTextNode('Box 2'))
+const box3 = document.querySelector('div[data-box-id="3"]')
+box3.appendChild(document.createTextNode('Box 3'))
 
 /**
  * Exercise 2
@@ -24,6 +30,10 @@
 const todos = ['Learn DOM', 'Practice', 'Profit 💸']
 
 // Your code goes here
+const ul = document.querySelector('ul')
+todos.forEach(todo => {
+    
+})
 
 /**
  * Exercise 3
