@@ -149,8 +149,9 @@ describe('ES2015 syntax', () => {
       //   return result
       // }
       
-      // TODO: const duplicateAndReverseArrayContents = (arr) => [...arr, ...[...arr].reverse()]
-      const duplicateAndReverseArrayContents = (arr) => [...arr, arr.reverse()]
+      const duplicateAndReverseArrayContents = (arr) => [...arr, ...[...arr].reverse()]
+      // WRONG: this will reverse the original arr!
+      //const duplicateAndReverseArrayContents = (arr) => [...arr, arr.reverse()]
 
       expect(duplicateAndReverseArrayContents([1, 2, 3])).toEqual([1, 2, 3, 3, 2, 1])
     })
