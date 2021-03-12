@@ -20,14 +20,13 @@ const getTodo = async (id) => {
   const todo = find(propEq('id', id), todos)
 
   if (!todo) throw new Error(`Todo ID ${id} not found`)
-  // if (!todo) return Promise.reject(`Todo ID ${id} not found`)
 
   return todo
 }
 
 const getTodoInBackground = (id, cb) => {
   getTodos()
-    .then((todos) => find(propEq('id', id), todos))
+    .then((todos) => cb(find(propEq('id', id), todos)))
   return true
 }
 
@@ -43,13 +42,9 @@ describe('Async tests', () => {
   describe('#getTodo', () => {
     it.todo('should find a todo')
 
-    // it.todo('should throw error when todo not found')
-    it('should throw error when todo not found', async () => {
-      return await expect(getTodo(42))
-        .rejects.toThrow('Todo ID 42 not found')
-    })
+    it.todo('should throw error when todo not found')})
 
-    // TODO what's wrong with this test?
+    // TODO what's wrong with this test? Rewrite it so it doesn't silently fail
     it('should throw an error for missing todo', async () => {
       try {
         await getTodo(1)
