@@ -42,7 +42,7 @@ describe('Async tests', () => {
   describe('#getTodo', () => {
     it.todo('should find a todo')
 
-    it.todo('should throw error when todo not found')})
+    it.todo('should throw error when todo not found')
 
     // TODO what's wrong with this test? Rewrite it so it doesn't silently fail
     it('should throw an error for missing todo', async () => {
