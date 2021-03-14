@@ -11,7 +11,17 @@
  *
  */
 
-export class TempTracker {}
+export class TempTracker {
+  constructor() {
+    this._temp = 0
+  }
+  getTemp() {
+    return this._temp
+  }
+  setTemp(temp) {
+    this._temp = temp 
+  }
+}
 
 /**
  * Create a class `AverageTempTracker`
@@ -25,7 +35,19 @@ export class TempTracker {}
  *
  */
 
-export class AverageTempTracker {}
+export class AverageTempTracker extends TempTracker {
+  constructor() {
+    super()
+    this._temps = []
+  }
+  setTemp(temp) {
+    super.setTemp(temp)
+    this._temps.push(temp)
+  }
+  getAverageTemp() {
+    return this._temps.reduce((sum, temp) => sum + temp) / this._temps.length
+  }
+}
 
 /**
  * Create a class `BoundedTempTracker`
@@ -44,20 +66,38 @@ export class AverageTempTracker {}
  *
  */
 
-export class BoundedTempTracker {}
+export class BoundedTempTracker extends TempTracker {
+  constructor() {
+    super()
+    this._reads = 0
+  }
+  setTemp(temp) {
+    if(temp < 100 && temp > 0) {
+      this._temp = temp
+    }
+  }
+  getTemp() {
+    this._reads++
+    return super.getTemp()  //RETURN!
+  }
+  getTempReads() {
+    return this._reads
+  }
+}
 
 export class Counter {
   /**
    * Step 1: Rewrite setting the initial state without
    * the `constructor` method.
    */
-  constructor() {
-    this.counter = 1
-  }
+  // constructor() {
+  //   this.counter = 1
+  // }
+  #counter = 1
 
   /**
    * Step 2: rewrite `this.counter` to use a private field
    *         so it can't be accessed outside the class.
    */
-  tick() { return this.counter++ }
+  tick() { return this.#counter++ }
 }

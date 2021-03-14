@@ -23,7 +23,7 @@ const fakeFailedServerCall = () => {
  */
 
 fakeServerCall()
-  .then(() => {}) // TODO, return server response data
+  .then((res) => res) // TODO, return server response data
   .then((serverRes) => {
     console.assert(serverRes === 'ok', 'Exercise 1: server response not correct')
   })
@@ -37,6 +37,8 @@ fakeServerCall()
 
 fakeFailedServerCall()
   // TODO catch server response failure
+  // .then(rej => rej)  <== WRONG
+  .catch(err => err)
   .then((serverFailure) => {
     console.assert(serverFailure === 'kaboom', 'Exercise 2: failure not caught')
   })
@@ -48,11 +50,11 @@ fakeFailedServerCall()
  * Use async/await and Promise.all to wait for two server responses.
  */
 
-const exercise3 = () => {
+const exercise3 = async () => {
   const call1 = fakeServerCall()
   const call2 = fakeServerCall()
 
-  const [res1, res2] = null // TODO
+  const [res1, res2] = await Promise.all[call1, call2]
 
   console.assert(res1 === 'ok', 'Exercise 3: first response incorrect')
   console.assert(res2 === 'ok', 'Exercise 3: second response incorrect')
