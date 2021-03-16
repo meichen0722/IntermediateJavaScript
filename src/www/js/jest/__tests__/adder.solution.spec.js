@@ -10,8 +10,8 @@ describe('Jest Exercises 1 and 2', () => {
     // `WeirdAdder' class correctly returns the sum of two arguments
 
     it('should add two numbers together', () => {
-      const weirdAdder = new WeirdAdder()
-      expect(weirdAdder.add(1,2)).toEqual(3)
+      const adder = new WeirdAdder()
+      expect(adder.add(1, 3)).toEqual(4)
     })
 
     /**************************************************************************/
@@ -24,10 +24,10 @@ describe('Jest Exercises 1 and 2', () => {
     // an array of odd sums.
 
     it('#getOddSumsCount should return number of odd sums', () => {
-      const weirdAdder = new WeirdAdder()
-      const spy = jest.spyOn(weirdAdder, '_getOddSums').mockImplementation(() => [3,5,7])
-      const count = weirdAdder.getOddSumsCount()
-      expect(count).toEqual(3)
+      const adder = new WeirdAdder()
+      jest.spyOn(adder, '_getOddSums')
+        .mockImplementation(() => [3, 5, 7])
+      expect(adder.getOddSumsCount()).toEqual(3)
     })
 
     /**************************************************************************/
@@ -40,8 +40,8 @@ describe('Jest Exercises 1 and 2', () => {
 
     it('#add should log the result when an odd sum is produced', () => {
       const mock = jest.fn()
-      const weirdAdder = new WeirdAdder(mock)
-      weirdAdder.add(1,2)
+      const adder = new WeirdAdder(mock)
+      adder.add(1, 2)
       expect(mock).toHaveBeenCalledWith('3 is odd')
     })
   })

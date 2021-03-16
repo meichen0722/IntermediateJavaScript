@@ -1,6 +1,8 @@
 
 # javascript intermediate
 
+- [ ] split up ES syntax into two exercises
+- [ ] fix url error where localhost:3000/js goes to wrong place
 - [ ] read about constraint validation: https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation
 - [ ] read through client side validation, add styling: https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
 - [ ] building form values parser: https://www.learnwithjason.dev/blog/get-form-values-as-json#a-full-example-of-multiple-input-types-with-the-formdata-api

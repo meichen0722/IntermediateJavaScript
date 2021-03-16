@@ -46,6 +46,7 @@ describe('Array higher-order functions', () => {
       //       result.push(array[i])
       //     }
       //   }
+
       const reject = (pred, array) => {
         let result = array.filter(elem => !pred(elem))
         return result
@@ -120,7 +121,7 @@ describe('Array higher-order functions', () => {
       expect(doubleSum([1, 2, 3])).toEqual(2 + 4 + 6)
     })
 
-    it('rewrite #flatten using reduce', () => {
+    it('EXTRA CREDIT: rewrite #flatten using reduce', () => {
       // TIP: Use Array#concat to join two arrays together immutably
       const flatten = (tuples) => {
         const result = []
@@ -135,7 +136,7 @@ describe('Array higher-order functions', () => {
       expect(flatten([[0, 1], [2, 3, 4], [5], []])).toEqual([0, 1, 2, 3, 4, 5])
     })
 
-    it('rewrite #groupByName using reduce', () => {
+    it('EXTRA CREDIT: rewrite #groupByName using reduce', () => {
       const groupByName = (arr) => {
         const groupings = {}
         for (const val of arr) {
@@ -146,6 +147,28 @@ describe('Array higher-order functions', () => {
       }
       const names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice']
       expect(groupByName(names)).toEqual({ Alice: 2, Bob: 1, Tiff: 1, Bruce: 1 })
+    })
+  })
+
+  describe('#every', () => {
+    it('EXTRA CREDIT: implement the #every method', () => {
+      // === Uncomment me and implement ===
+      // Array.prototype.every = function(pred) {
+      //   console.log(this) // access the array with `this`
+      // }
+      expect([1, 2, 3].every(x => x > 0)).toEqual(true)
+      expect([1, 2, 3].every(x => x > 2)).toEqual(false)
+    })
+  })
+
+  describe('#some', () => {
+    it('EXTRA CREDIT: implement the #some method', () => {
+      // === Uncomment me and implement ===
+      // Array.prototype.some = function(pred) {
+      //   console.log(this) // access the array with `this`
+      // }
+      expect([1, 2, 3].some(x => x > 2)).toEqual(true)
+      expect([1, 2, 3].some(x => x > 4)).toEqual(false)
     })
   })
 })

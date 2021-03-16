@@ -1,15 +1,13 @@
 /**
  * All data coming in and going out will be converted to/from JSON.
  *
- * Promises should be resolved with response data from the server, decoded from JSON.
+ * Promises should be resolved with response data from the server.
  *
  * Hints:
  *
- *   - `fetch' returns a promise that yield a response object.
+ *   - `axios' returns a promise that resolves an object with `data` as a prop
  *
- *   - The response object has a `json' method that returns a promise.
- *
- * The `fetch' API: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+ * Axios docs: https://github.com/axios/axios
  */
 export const Ajax = (() => {
   const raw = async (url, method, data) => {

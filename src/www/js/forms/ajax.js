@@ -22,6 +22,11 @@
  */
 
 // your code goes here
+document.querySelector('form').addEventListener('submit', async e => {
+    e.preventDefault()
+    
+
+})
 
 /**
  * Exercise 2

@@ -1,13 +1,7 @@
-## DOM Nodes: Exercises
+### Exercise
 
-### Exercise: DOM Manipulation
-
-  #. Open the following files in your text editor:
-
-     - `src/www/js/flags/flags.js`
-
-     - `src/www/js/flags/index.html` (read only!)
-
-  #. Open the `index.html` file in your web browser.
-
-  #. Complete the exercise.
+1. Open http://localhost:3000/js/dom/exercise.html
+1. Open these files:
+    1. `src/www/js/dom/exercise.js`
+    1. `src/www/js/dom/exericse.html` (read only)
+1. Follow the instructions
