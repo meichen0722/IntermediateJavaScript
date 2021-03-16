@@ -9,11 +9,10 @@ describe('Array higher-order functions', () => {
     it('rewrite the for loop with forEach', () => {
       const mockFn = jest.fn()
 
-      // TODO rewrite with #forEach
-      // Remember: forEach provides three args: element, index, array
-      for (let i = 0; i < users.length; i++) {
-        mockFn(users[i])
-      }
+      // for (let i = 0; i < users.length; i++) {
+      //   mockFn(users[i])
+      // }
+      users.forEach(mockFn)
 
       expect(mockFn.mock.calls.length).toEqual(3)
       expect(mockFn.mock.calls).toEqual([
@@ -26,44 +25,81 @@ describe('Array higher-order functions', () => {
 
   describe('#filter', () => {
     it('rewrite the filter operation without a for loop', () => {
-      const usersWithFavoriteColorBlue = []
+      // const usersWithFavoriteColorBlue = []
 
-      for (let i = 0; i < users.length; i++) {
-        const user = users[i]
-        if (user.favoriteColor === 'blue') {
-          usersWithFavoriteColorBlue.push(user)
-        }
-      }
+      // for (let i = 0; i < users.length; i++) {
+      //   const user = users[i]
+      //   if (user.favoriteColor === 'blue') {
+      //     usersWithFavoriteColorBlue.push(user)
+      //   }
+      // }
+      const usersWithFavoriteColorBlue = users.filter(user => user.favoriteColor === 'blue')
 
       expect(usersWithFavoriteColorBlue).toEqual([users[0]])
     })
 
-    it('EXTRA CREDIT: write a function #reject that does the opposite of #filter and uses that method', () => {
+    it('write a function #reject that does the opposite of #filter and uses that method', () => {
+      // const reject = (pred, array) => {
+      //   const result = []
+      //   for (let i = 0; i < array.length; i++) {
+      //     if (!pred(array[i])) {
+      //       result.push(array[i])
+      //     }
+      //   }
+
       const reject = (pred, array) => {
-        const result = []
-        for (let i = 0; i < array.length; i++) {
-          if (!pred(array[i])) {
-            result.push(array[i])
-          }
-        }
+        let result = array.filter(elem => !pred(elem))
         return result
       }
-
       const usersWithoutFavoriteColorblue = reject(user => user.favoriteColor === 'blue', users)
       expect(usersWithoutFavoriteColorblue).toEqual([users[1], users[2]])
     })
   })
 
-  describe('#map', () => {
-    it('rewrite using #map', () => {
-      const incrementAgeOfHumans = (humans) => {
-        const result = []
-        for (let i = 0; i < humans.length; i++) {
-          result.push({ ...humans[i], age: humans[i].age + 1 })
-        }
+  describe('#every', () => {
+    it('implement the #every method', () => {
+      // === Uncomment me and implement ===
+      Array.prototype.every = function(pred) {
+        // console.log(this) // access the array with `this`
+        let result = true
+        this.forEach(elem => {
+          if(!pred(elem)) result = false
+        })
         return result
       }
+      expect([1, 2, 3].every(x => x > 0)).toEqual(true)
+      expect([1, 2, 3].every(x => x > 2)).toEqual(false)
+    })
+  })
 
+  describe('#some', () => {
+    it('implement the #some method', () => {
+      // === Uncomment me and implement ===
+      Array.prototype.some = function(pred) {
+        // console.log(this) // access the array with `this`
+        let result = false
+        this.forEach(elem => {
+          if(pred(elem)) result = true
+        })
+        return result
+      }
+      expect([1, 2, 3].some(x => x > 2)).toEqual(true)
+      expect([1, 2, 3].some(x => x > 4)).toEqual(false)
+    })
+  })
+
+  describe('#map', () => {
+    it('rewrite using #map', () => {
+      // const incrementAgeOfHumans = (humans) => {
+      //   const result = []
+      //   for (let i = 0; i < humans.length; i++) {
+      //     result.push({ ...humans[i], age: humans[i].age + 1 })
+      //   }
+      //   return result
+      // }
+
+      // TODO
+      const incrementAgeOfHumans = (humans) => humans.map(human => human.age + 1)
       expect(incrementAgeOfHumans(users)).toEqual([
         { id: 1, name: 'Andrew', age: 34, favoriteColor: 'blue' },
         { id: 2, name: 'Billy', age: 21, favoriteColor: 'red' },
